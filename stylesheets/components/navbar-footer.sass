@@ -1,0 +1,126 @@
+
+*
+  position: relative
+
+
+
+nav a
+  color: $color_white
+  &:hover
+    color: $color_orange
+    text-decoration: none
+
+nav.myNavbar
+    background-color: $color_black
+    padding: 30px 150px
+    display: flex
+    width: 100%
+    position: fixed
+    z-index: 20
+    justify-content: space-between
+    transition-duration: 0.5s
+    .logo
+      font-size: 30px
+      align-self: center
+    .menu
+      align-self: center
+      display: inline-flex
+      
+      .menu_list
+        box-sizing: border-box
+        color: $color_white
+        font-size: 18px
+        padding: 10px 30px
+        // margin-left: 40px
+        border: 1.5px solid transparent
+        box-sizing: border-box
+        &:hover 
+          color: $color_ltOrange
+      a.actived
+        border-bottom: 1.5px solid $color_orange
+        color: $color_orange
+        cursor: default
+        font-weight: bold
+
+     
+
+
+
+/* The container <div> - needed to position the dropdown content
+
+.dropdown
+    position: relative
+    display: inline-block
+    
+/* Dropdown Content (Hidden by Default)
+
+.dropdown-content
+    display: none
+    position: absolute
+    background-color: $color_white
+    min-width: 100%
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+    z-index: 1
+    margin-left: -30px
+    margin-top: 11.5px
+    // margin-left: 20px
+   
+    a
+        color: $color_black
+        padding: 12px 30px
+        text-decoration: none
+        display: block
+        
+        &:hover
+          background-color: $color_orange
+          color: $color_white
+          
+
+/* Links inside the dropdown
+
+/* Change color of dropdown links on hover
+
+/* Show the dropdown menu on hover
+
+.dropdown:hover
+  .dropdown-content
+    display: block
+
+/* Change the background color of the dropdown button when the dropdown content is shown
+
+nav.myNavbar.navbar-top
+  background-color: transparent
+  .logo
+  .menu
+    .menu_list
+      border: 1.5px solid transparent
+      
+      &:hover
+        border: 1.5px solid $color_white
+    a.menu_list.actived
+      &:hover
+        color: $color_orange
+
+
+
+
+footer
+  
+  padding-bottom: 100px
+  .site-map
+    .container
+      .col-lg-7
+      .col-lg-5
+        form
+          i 
+            position: absolute
+            z-index: 1
+            padding: 0px 15px 0px 18px
+          input
+            height: 50px
+            width: 80%
+            text-indent: 45px
+          button
+            width: 20%
+            
+            
