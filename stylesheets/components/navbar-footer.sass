@@ -12,7 +12,7 @@ nav a
 
 nav.myNavbar
     background-color: $color_black
-    padding: 30px 150px
+    padding: 0px 150px
     display: flex
     width: 100%
     position: fixed
@@ -30,14 +30,14 @@ nav.myNavbar
         box-sizing: border-box
         color: $color_white
         font-size: 18px
-        padding: 10px 30px
+        padding: 20px 30px
         // margin-left: 40px
-        border: 1.5px solid transparent
-        box-sizing: border-box
+        border: 2px solid transparent
+        // box-sizing: border-box
         &:hover 
           color: $color_ltOrange
       a.actived
-        border-bottom: 1.5px solid $color_orange
+        border-bottom: 2px solid $color_orange
         color: $color_orange
         cursor: default
         font-weight: bold
@@ -51,6 +51,7 @@ nav.myNavbar
 .dropdown
     position: relative
     display: inline-block
+    // box-sizing: border-box
     
 /* Dropdown Content (Hidden by Default)
 
@@ -61,8 +62,8 @@ nav.myNavbar
     min-width: 100%
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
     z-index: 1
-    margin-left: -30px
-    margin-top: 11.5px
+    left: 0px
+    margin-top: 21.5px
     // margin-left: 20px
    
     a
@@ -70,9 +71,17 @@ nav.myNavbar
         padding: 12px 30px
         text-decoration: none
         display: block
-        
+        width: 100%
+        border-left: 2px solid $color_white
+        border-right: 2px solid $color_white
+        border-top: 1px solid $color_white
+        border-bottom: 1px solid $color_white
         &:hover
           background-color: $color_orange
+          border-left: 2px solid $color_orange
+          border-right: 2px solid $color_orange
+          border-top: 1px solid $color_orange
+          border-bottom: 1px solid $color_orange
           color: $color_white
           
 
@@ -90,13 +99,18 @@ nav.myNavbar
 
 nav.myNavbar.navbar-top
   background-color: transparent
+  padding: 30px 150px
+  height: auto
   .logo
   .menu
     .menu_list
-      border: 1.5px solid transparent
-      
+      border: 2px solid transparent
+      padding: 10px 30px
       &:hover
-        border: 1.5px solid $color_white
+        border: 2px solid $color_white
+    .dropdown
+        .dropdown-content
+          margin-top: 11.5px
     a.menu_list.actived
       &:hover
         color: $color_orange
