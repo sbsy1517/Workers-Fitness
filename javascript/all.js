@@ -16,7 +16,7 @@
 $(document).ready(function(){
   $('.bgimg').parallax({
     imageSrc: 'source/img/index-bg-1.jpg',
-    positionY: "-700px",
+    
     speed: 0.3
   });
   jQuery(window).trigger('resize').trigger('scroll');
@@ -31,7 +31,7 @@ $(document).ready(function(){
     let target=$('.fas').attr('href');
     // console.log(alert(target));
     $('html,body').animate({
-      scrollTop: $(target).offset().top - 65
+      scrollTop: $(target).offset().top - 45
     },500);
   });
   $('.owl-carousel').owlCarousel({
