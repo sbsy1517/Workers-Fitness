@@ -20,10 +20,9 @@ section#start
             min-width: auto
             height: 130%
             min-height: 1000px
-    +lg
-        min-height: 768px
-        // min-height: auto 
-        // min-width: auto   
+    +md
+        height: 768px
+        min-height: auto 
     .container
         z-index: 2
         .contain
@@ -239,14 +238,14 @@ section#newsNshop
             left: 50%
             transform: translateX(-50%)
         p
-            margin-bottom: 50px
+            // margin-bottom: 50px
         .row
             .side-left
                 padding: 0px 14px
                 margin-bottom: 28px
                 .news
                     background-color: $color_ltGrey
-                    padding: 60px 35px
+                    padding: 30px 35px 60px
                     &:before
                         content: ""
                         background-color: $color_ltOrange
@@ -256,8 +255,17 @@ section#newsNshop
                         bottom: 0px
                         left: 0px
                     h4
-                        font-size: 25px
+                        display: inline-block
+                        padding: 20px 35px 
+                        margin-left: -35px
+                        font-size: 20px
+                        font-weight: bold
+                        background-color: $color_ltOrange
+                        span
+                            font-size: 40px
+                            letter-spacing: 2px
                     .news_content
+                        margin-top: 30px
                         a.news_subtitle
                             font-size: 20px
                             color: $color_black
@@ -280,7 +288,8 @@ section#newsNshop
                             overflow: hidden
                             display: -webkit-box
                             font-size: 15px
-                            margin: 0
+                            margin-bottom: 15px
+                        
                         .news_announcement
                             p.store
                                 text-align: left
@@ -355,18 +364,24 @@ section#newsNshop
                     .app
                         margin-bottom: 28px
                         .app_contain
-                            padding: 60px 35px
+                            padding: 30px 35px 60px
                             background-color: $color_ltGrey
                             overflow: hidden
                             min-height: 380px
                             h4
-                                font-size: 25px 
-                                z-index: 1
-                                color: $color_black
+                                display: inline-block
+                                padding: 20px 35px 
+                                margin-left: -35px
+                                font-size: 20px
+                                font-weight: bold
+                                background-color: $color_ltOrange
+                                span
+                                    font-size: 40px
+                                    letter-spacing: 2px
                             p
                                 font-size: 15px   
                                 text-align: left
-                                width: 80%   
+                                width: 100%   
                                 z-index: 1   
                                 color: $color_black 
                             .img
