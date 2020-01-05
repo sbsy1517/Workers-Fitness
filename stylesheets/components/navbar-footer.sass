@@ -1,3 +1,44 @@
+.menu_mobile.open
+  transform: translateY(0px)
+  transition-duration: 0.4s
+  background-color: $color_black
+.menu_mobile
+  background-color: transparent
+  color: $color_white
+  display: none
+  height: 460px
+  width: 100%
+  z-index: -1
+  padding: 0px 55px 40px
+  position: absolute
+  left: 0px
+  transform: translateY(-460px)
+  transition-duration: 0.5s
+  .title
+    box-sizing: border-box
+  .active
+    color: $color_orange
+    font-weight: bold
+  
+  a
+    color: $color_white
+  .wrap
+    // margin-bottom: 50px
+    
+    .menu_list
+      font-size: 20px
+      
+      a
+        font-size: 15px
+        display: block
+        padding: 5px 0px
+    a.menu_list
+      font-size: 20px
+      height: 44px
+  +lg
+    display: flex
+    align-items: flex-end
+    
 nav a
   color: $color_white
   &:hover
@@ -8,6 +49,8 @@ nav.myNavbar
     padding: 0px 150px
     z-index: 5
     transition-duration: 0.5s
+    +xl
+      padding: 0px 55px
     .logo
       font-size: 30px
     .menu
@@ -24,11 +67,25 @@ nav.myNavbar
         color: $color_orange
         cursor: default
         font-weight: bold
+    .menu.rwd-overlg
+      display: inline-flex
+      +lg
+        display: none
+    .menu-hamburger.rwd-underlg
+      display: none
+      color: $color_white
+      padding: 10px 7px
+      font-size: 35px
+      +lg
+        display: inline-block
 nav.myNavbar.navbar-top
   background-color: transparent
   padding: 30px 150px
+  +xl
+      padding: 30px 55px
   .logo
   .menu
+    
     .menu_list
       border: 1.5px solid transparent
       padding: 10px 30px
@@ -40,7 +97,7 @@ nav.myNavbar.navbar-top
     a.menu_list.actived
       &:hover
         color: $color_orange
-
+  
 .dropdown
   .dropdown-content
     display: none
