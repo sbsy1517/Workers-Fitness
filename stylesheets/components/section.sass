@@ -6,6 +6,7 @@ section#start
     overflow: hidden
     padding: 0px
     position: relative
+    
     video
         width: 130%
         min-width: 1920px
@@ -13,7 +14,15 @@ section#start
         top: 50%
         left: 50%
         transform: translateX(-50%) translateY(-50%)
-        
+    +xl
+        video
+            width: auto
+            min-width: auto
+            height: 130%
+            min-height: 1366px
+    +lg
+        // min-height: auto 
+        // min-width: auto   
     .container
         z-index: 2
         .contain
@@ -48,7 +57,9 @@ section#about
     color: $color_black
     text-align: center   
     padding: 80px 0px
-    .container 
+    +lg
+        padding: 60px 0px 50px
+    .container
         .line
             width: 35px
             height: 4px
@@ -56,14 +67,15 @@ section#about
             background-color: $color_orange
             left: 50%
             transform: translateX(-50%)
-        .skew
+        .skew-wrap.rwd-overlg
             display: flex
             width: 100%
             height: 430px
             justify-content: center
             text-align: center
             align-items: center
-            
+            +lg
+                display: none
             a.about
                 width: 30%
                 height: 380px
@@ -80,7 +92,7 @@ section#about
                     width: 100%
                     height: 100%
                     color: transparent
-                    .wrap
+                    .intro
                         width: 80%
                         +center
                         .title
@@ -114,11 +126,71 @@ section#about
                         transition: 0.3s
                         transition-delay: 0.2s
                         background-color: rgba(227, 176, 75,0.8)
+        .wrap.rwd-underlg
+            display: none
+            +lg
+                display: block
+            a.about
+                display: block
+                text-align: left
+                text-decoration: none
+                margin-top: 15px
+                .img
+                    height: 50vh
+                    background-position: center center
+                    background-size: cover
+                    &:before
+                        content: ""
+                        background-color: rgba(0,0,0,0.1)
+                        position: absolute
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        top: 0
+                        
+                .description
+                    position: absolute
+                    height: 100%
+                    width: 100%
+                    // border: 1px solid #000 
+                    bottom: 0px
+                    color: $color_white
+                    .intro
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        padding: 50px 40px
+                        min-width: 450px
+                        width: 90%
+                        h3
+                            font-weight: bold
+                            font-size: 50px
+                        p
+                            margin: 0px
+                            font-size: 25px
+                            letter-spacing: normal
+                            word-spacing: normal
+                        span
+                            font-weight: bold
+                            top: 10px
+                            
+                &:hover
+                    transition: 0.3s
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3)
+                    .description
+                        // color: $color_white
+                        transition: 0.3s
+                        transition-delay: 0.2s
+                        background-color: rgba(227, 176, 75,0.8)   
+                   
+
+
 .bgimg
     height: 500px
     background: transparent
     background-size: 100% auto
     background-repeat: no-repeat
+    
     
     &:before
         content: ""

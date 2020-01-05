@@ -5,6 +5,8 @@ html(lang="en")
         meta(name='viewport' content='width=device-width, initial-scale=1')
         //- link(href='images/favicon.ico' rel='shortcut icon')
         meta(charset='UTF-8')
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="stylesheets/components/bootstrap.min.css")
         
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
@@ -44,11 +46,11 @@ html(lang="en")
                 h2 WE HAVE WHAT YOU NEED
                 .line
                 p Whether you’re just starting out or an old hand, you’ll find what you need for your fitness journey.
-                .skew
+                .skew-wrap.rwd-overlg
                     a.about(href="#")
                         h3 CLASSES
                         .description
-                            .wrap
+                            .intro
                                 .title CLASSES
                                 p  If you love the energy of group workouts, we have a class that’ll fit you.
                                 span Explore More
@@ -57,7 +59,7 @@ html(lang="en")
                     a.about(href="#")
                         h3 Locations
                         .description
-                            .wrap
+                            .intro
                                 .title Locations
                                 p  Our clubs have cutting-edge fitness equipment to take your workout to the next level. 
                                 span Explore More
@@ -66,18 +68,45 @@ html(lang="en")
                     a.about(href="#")
                         h3 Trainers
                         .description
-                            .wrap
+                            .intro
                                 .title Trainers
                                 p  Surpass your fitness goals with our expert trainers’ help and make you better.
                                 span Explore More
                         img.trainers-img(src="source/img/index-trainers.jpg", alt="")
+
+                .wrap.rwd-underlg
+                    a.about(href="#")
+                        .img.class-img(style="background-image: url('source/img/index-class.jpg') ")
+                        .description
+                            .intro
+                                h3 CLASSES
+                                p  If you love the energy of group workouts, we have a class that’ll fit you.
+                                span Explore More
+                    a.about(href="#")
+                        .img.locatiom-img(style="background-image: url('source/img/index-location.jpg') ")
+                        .description
+                            .intro
+                                h3 Locations
+                                p  Our clubs have cutting-edge fitness equipment to take your workout to the next level. 
+                                span Explore More
+                    a.about(href="#")
+                        .img.trainers-img(style="background-image: url('source/img/index-trainers.jpg') ")
+                        .description
+                            .intro
+                                h3 Trainers
+                                p  Surpass your fitness goals with our expert trainers’ help and make you better.
+                                span Explore More
+                        
+                    
+                        
+                    
 
                         
         .bgimg(data-parallax="scroll" data-image-src="source/img/index-bg-3.jpg")
             .container
                 .description
                     h2  CHANGE IS STRONG
-                    p NEVER TO LATE TO WORKOUT 
+                    p NEVER TOO LATE TO WORKOUT 
                     a.button(href="#")
                         button(type="button").btn.btn-outline-light FIND WORKERS' AND START TODAY
                         
