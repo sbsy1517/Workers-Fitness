@@ -2,60 +2,55 @@
 *
   position: relative
 
-
-
 nav a
   color: $color_white
   &:hover
     color: $color_orange
     text-decoration: none
-
 nav.myNavbar
     background-color: $color_black
     padding: 0px 150px
-    display: flex
-    width: 100%
-    position: fixed
-    z-index: 20
-    justify-content: space-between
+    z-index: 5
     transition-duration: 0.5s
     .logo
       font-size: 30px
-      align-self: center
     .menu
-      align-self: center
-      display: inline-flex
-      
       .menu_list
         box-sizing: border-box
         color: $color_white
         font-size: 18px
         padding: 20px 30px
-        // margin-left: 40px
-        border: 2px solid transparent
-        // box-sizing: border-box
+        border: 1.5px solid transparent
         &:hover 
           color: $color_ltOrange
       a.actived
-        border-bottom: 2px solid $color_orange
+        border-bottom: 1.5px solid $color_orange
         color: $color_orange
         cursor: default
         font-weight: bold
 
-     
+nav.myNavbar.navbar-top
+  background-color: transparent
+  padding: 30px 150px
+  .logo
+  .menu
+    .menu_list
+      border: 1.5px solid transparent
+      padding: 10px 30px
+      &:hover
+        border: 1.5px solid $color_white
+    .dropdown
+        .dropdown-content
+          margin-top: 11.5px
+    a.menu_list.actived
+      &:hover
+        color: $color_orange     
 
 
 
-/* The container <div> - needed to position the dropdown content
 
 .dropdown
-    position: relative
-    display: inline-block
-    // box-sizing: border-box
-    
-/* Dropdown Content (Hidden by Default)
-
-.dropdown-content
+  .dropdown-content
     display: none
     position: absolute
     background-color: $color_white
@@ -64,77 +59,72 @@ nav.myNavbar
     z-index: 1
     left: 0px
     margin-top: 21.5px
-    // margin-left: 20px
-   
     a
-        color: $color_black
-        padding: 12px 30px
-        text-decoration: none
-        display: block
-        width: 100%
-        border-left: 2px solid $color_white
-        border-right: 2px solid $color_white
-        border-top: 1px solid $color_white
-        border-bottom: 1px solid $color_white
-        &:hover
-          background-color: $color_orange
-          border-left: 2px solid $color_orange
-          border-right: 2px solid $color_orange
-          border-top: 1px solid $color_orange
-          border-bottom: 1px solid $color_orange
-          color: $color_white
-          
-
-/* Links inside the dropdown
-
-/* Change color of dropdown links on hover
-
-/* Show the dropdown menu on hover
-
-.dropdown:hover
-  .dropdown-content
-    display: block
-
-/* Change the background color of the dropdown button when the dropdown content is shown
-
-nav.myNavbar.navbar-top
-  background-color: transparent
-  padding: 30px 150px
-  height: auto
-  .logo
-  .menu
-    .menu_list
-      border: 2px solid transparent
-      padding: 10px 30px
+      color: $color_black
+      padding: 12px 30px
+      text-decoration: none
+      display: block
       &:hover
-        border: 2px solid $color_white
-    .dropdown
-        .dropdown-content
-          margin-top: 11.5px
-    a.menu_list.actived
-      &:hover
-        color: $color_orange
-
-
+        background-color: $color_orange
+        color: $color_white
+  &:hover
+    .dropdown-content
+      display: block
 
 
 footer
-  
-  padding-bottom: 100px
   .site-map
-    .container
+    background-color: $color_white
+    padding: 30px 150px 0px
+    .row
       .col-lg-7
+        .row.footer_content
+          .col-4
+            h4 
+              font-size: 17px
+              font-weight: bold
+            ul
+              padding: 0px
+              li
+                list-style-type: none
+                a
+                  text-decoration: none
+                  font-size: 15px
+                  color: $color_grey
+                  &:hover
+                    color: $color_ltGrey
+            ul.social
+              left: -5px
+              li
+                
+                a
+                  padding: 10px 
+                  font-size: 25px
       .col-lg-5
+        h4
+          font-size: 25px
         form
           i 
             position: absolute
             z-index: 1
-            padding: 0px 15px 0px 18px
+          i.far.fa-envelope
+            padding: 10px 10px 10px 14px
+            left: 1px
+            background-color: white
           input
             height: 50px
-            width: 80%
+            width: 85%
             text-indent: 45px
+            font-size: 15px
           button
-            width: 20%
-            
-            
+            width: 15%
+            left: -1px
+  .copyright
+    background-color: $color_black
+    .container
+      p
+        color: $color_grey
+        font-size: 15px
+        margin-bottom: 0px
+        padding: 20px 0px 20px
+    

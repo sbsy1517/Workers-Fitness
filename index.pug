@@ -11,10 +11,10 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional' rel='stylesheet')
         link(rel='stylesheet' href='stylesheets/all.css')
     body    
-        nav.myNavbar.navbar-top
+        nav.myNavbar.navbar-top.d-flex.w-100.position-fixed.justify-content-between.align-items-center
             a.logo(href="#") Workers'
-            .menu
-                a.menu_list.actived(href="#") Home
+            .menu.d-inline-flex
+                a.menu_list.actived(href="#").d-inline-flex Home
                 .dropdown.menu_list About Us
                     .dropdown-content
                         a(href="#") Classes
@@ -181,61 +181,74 @@ html(lang="en")
                                 
         footer
             .site-map
-                .container
-                    .row
-                        .col-lg-7
-                            .row.footer_content
-                                .col-3
-                                    h4 ABOUT US
-                                    ul
-                                        li
-                                            a(href="#") CLASSES
-                                        li
-                                            a(href="#") LOCATIONS
-                                        li
-                                            a(href="#") TRAINERS
-                                .col-3
-                                    h4 MEMBERSHIP
-                                    ul
-                                        li
-                                            a(href="#") LOGIN
-                                        li
-                                            a(href="#") SIGN UP
-                                        li
-                                            a(href="#") JOIN US
-                                     
-                                .col-3
-                                    h4 MORE
-                                    ul
-                                        li
-                                            a(href="#") NEWS
-                                        li
-                                            a(href="#") SHOP
-                                        li 
-                                            a(href="#") IOS APP
-                                        li
-                                            a(href="#") ANDROID APP
-                                        
-                                .col-3
-                                    h4 COMPANY
-                                    ul
-                                        li
-                                            a(href="#") CAREERS
-                                        li
-                                            a(href="#") PRESSROOM 
-                                        li 
-                                            a(href="#") PRIVACY POLICY
-                                        li
-                                            a(href="#") TERMS & CONDITIONS
-                        .col-lg-5
-                            h4
-                                label(for="subcribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
-                            form(action="").d-flex
-                                i.far.fa-envelope.d-flex.align-items-center.h-100
-                                input#subcribe(type="email" placeholder=" Enter Your Email to Get News")
-                                button.btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
-                                    i.fas.fa-arrow-right
+                .row
+                    .col-lg-7
+                        .row.footer_content
+                            .col-4
+                                h4 ABOUT US
+                                ul
+                                    li
+                                        a(href="#") CLASSES
+                                    li
+                                        a(href="#") LOCATIONS
+                                    li
+                                        a(href="#") TRAINERS
+                            .col-4
+                                h4 MEMBERSHIP
+                                ul
+                                    li
+                                        a(href="#") LOGIN
+                                    li
+                                        a(href="#") SIGN UP
+                                    li
+                                        a(href="#") JOIN US
+                                    
+                            .col-4
+                                h4 MORE
+                                ul
+                                    li
+                                        a(href="#") NEWS
+                                    li
+                                        a(href="#") SHOP
+                                    li 
+                                        a(href="https://www.apple.com/ios/app-store/" target="_blank") IOS APP
+                                    li
+                                        a(href="https://play.google.com/store/apps" target="_blank") ANDROID APP
+                            .col-4
+                                h4 FIND US ON
+                                ul.social.w-75.d-flex.justify-content-between
+                                    li
+                                        a(href="https://www.facebook.com" target="_blank").fab.fa-facebook-f
+                                    li
+                                        a(href="https://www.instagram.com" target="_blank").fab.fa-instagram
+                                    li
+                                        a(href="https://twitter.com" target="_blank").fab.fa-twitter  
+                                    li 
+                                        a(href="https://www.youtube.com" target="_blank").fab.fa-youtube
+                                    
 
+                            .col-4
+                                h4 COMPANY
+                                ul
+                                    li
+                                        a(href="#") CAREERS
+                                    li
+                                        a(href="#") PRESSROOM 
+                                    li 
+                                        a(href="#") PRIVACY POLICY
+                                    li
+                                        a(href="#") TERMS & CONDITIONS
+                    .col-lg-5
+                        h4
+                            label(for="subcribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
+                        form(action="").d-flex
+                            i.far.fa-envelope.d-flex.align-items-center.align-self-center
+                            input#subcribe(type="email" placeholder=" Enter Your Email to Get News")
+                            button.btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
+                                i.fas.fa-arrow-right
+            .copyright
+                .container.text-center
+                    p Copyright © 2020 Workers' Fitness Studio.  This website is only the project for learning Bootstrap4. Website design and build by h.chiu.
 
 
         script(src="javascript/jquery.min.js")
@@ -244,85 +257,3 @@ html(lang="en")
         script(src="javascript/parallax.min.js")
         script(src="javascript/owl.carousel.min.js")
         script(src="javascript/all.js")
-        
-
-
-
-
-
-
-
-
-    //- section#news_location
-    //-     .container
-    //-         .row
-    //-             .col-md-3
-    //-                 .card(style='width: 100%')
-    //-                     .card-body
-    //-                         h5.card-title Lates News
-    //-                         p.card-text
-    //-                             | Some quick example text to build on the card title and make up the bulk of the card's content.
-    //-                     ul.list-group.list-group-flush
-    //-                         li.list-group-item Cras justo odio
-    //-                         li.list-group-item Dapibus ac facilisis in
-    //-                         li.list-group-item Vestibulum at eros
-    //-                     .card-body
-    //-                         a.card-link(href='#') Card link
-    //-                         a.card-link(href='#') Another link
-
-
-    //-             .col-md-9
-    //-                 .card(style='width: 100%')
-    //-                     img.card-img-top(src='...', alt='...')
-    //-                     .card-body
-    //-                         h5.card-title Find Workers'
-    //-                         p.card-text
-    //-                             | Some quick example text to build on the card title and make up the bulk of the card's content.
-    //-                     ul.list-group.list-group-flush
-    //-                         li.list-group-item Cras justo odio
-    //-                         li.list-group-item Dapibus ac facilisis in
-    //-                         li.list-group-item Vestibulum at eros
-    //-                     .card-body
-    //-                         a.card-link(href='#') Card link
-    //-                         a.card-link(href='#') Another link
-    //- section#shop    
-    //-     .container
-    //-         h2 FEATURED MERCH AND WHEY
-    //-         button(type="button").btn.btn-outline-light BROWSE THE SHOP 
-
-    //- footer
-    //-     .container.d-flex.row
-    //-         .col-md-8
-    //-             section#footer_about 
-    //-                 a(href="#") About
-    //-                 a(href="#") Our Story
-    //-                 a(href="#") Equipments
-    //-                 a(href="#") Trainers
-    //-                 a(href="#") Group Class
-    //-             section#footer_more
-    //-                 a(href="#") More
-    //-                 a(href="#") Shop
-    //-                 a(href="#") Location
-    //-                 a(href="#") News
-    //-             section#footer_mebership
-    //-                 a(href="#") 
-    //-         .col-md-4
-    //-             section#footer_contact
-    //-                 h3 email us
-    //-                 input(type="email")
-    //-                 button(type="button").btn.btn-outline-dark Send
-    //-     .container.d-flex.row
-    //-         .col-md-4
-    //-             h3 Mobile App
-    //-             img(src="#", alt="").android
-    //-             img(src="#", alt="").ios
-    //-         .col-md-4
-    //-             a(href="#").fab.fa-facebook-f
-    //-             a(href="#").fab.fa-twitter
-    //-             a(href="#").fab.fa-instagram
-    //-             a(href="#").fab.fa-youtube
-    //-         .col-md-4
-    //-             a(href="#") Careers
-    //-     .container
-    //-         p © 2020, Worker' Gym International, LLC. Website design and build by Chiudini
-        

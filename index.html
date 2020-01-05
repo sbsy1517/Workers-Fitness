@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="stylesheets/all.css"/>
   </head>
   <body>   
-    <nav class="myNavbar navbar-top"><a class="logo" href="#">Workers'</a>
-      <div class="menu"><a class="menu_list actived" href="#">Home</a>
+    <nav class="myNavbar navbar-top d-flex w-100 position-fixed justify-content-between align-items-center"><a class="logo" href="#">Workers'</a>
+      <div class="menu d-inline-flex"><a class="menu_list actived d-inline-flex" href="#">Home</a>
         <div class="dropdown menu_list">About Us
           <div class="dropdown-content"><a href="#">Classes</a><a href="#">Locations</a><a href="#">Trainers</a></div>
         </div><a class="menu_list" href="#">News</a><a class="menu_list" href="#">Shop</a>
@@ -141,56 +141,68 @@
     </section>
     <footer>
       <div class="site-map">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="row footer_content">
-                <div class="col-3">
-                  <h4>ABOUT US</h4>
-                  <ul>
-                    <li><a href="#">CLASSES</a></li>
-                    <li><a href="#">LOCATIONS</a></li>
-                    <li><a href="#">TRAINERS</a></li>
-                  </ul>
-                </div>
-                <div class="col-3">
-                  <h4>MEMBERSHIP</h4>
-                  <ul>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">SIGN UP</a></li>
-                    <li><a href="#">JOIN US</a></li>
-                  </ul>
-                </div>
-                <div class="col-3">
-                  <h4>MORE</h4>
-                  <ul>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li> <a href="#">IOS APP</a></li>
-                    <li><a href="#">ANDROID APP</a></li>
-                  </ul>
-                </div>
-                <div class="col-3">
-                  <h4>COMPANY</h4>
-                  <ul>
-                    <li><a href="#">CAREERS</a></li>
-                    <li><a href="#">PRESSROOM </a></li>
-                    <li> <a href="#">PRIVACY POLICY</a></li>
-                    <li><a href="#">TERMS & CONDITIONS</a></li>
-                  </ul>
-                </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="row footer_content">
+              <div class="col-4">
+                <h4>ABOUT US</h4>
+                <ul>
+                  <li><a href="#">CLASSES</a></li>
+                  <li><a href="#">LOCATIONS</a></li>
+                  <li><a href="#">TRAINERS</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h4>MEMBERSHIP</h4>
+                <ul>
+                  <li><a href="#">LOGIN</a></li>
+                  <li><a href="#">SIGN UP</a></li>
+                  <li><a href="#">JOIN US</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h4>MORE</h4>
+                <ul>
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">SHOP</a></li>
+                  <li> <a href="https://www.apple.com/ios/app-store/" target="_blank">IOS APP</a></li>
+                  <li><a href="https://play.google.com/store/apps" target="_blank">ANDROID APP</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h4>FIND US ON</h4>
+                <ul class="social w-75 d-flex justify-content-between">
+                  <li><a class="fab fa-facebook-f" href="https://www.facebook.com" target="_blank"></a></li>
+                  <li><a class="fab fa-instagram" href="https://www.instagram.com" target="_blank"></a></li>
+                  <li><a class="fab fa-twitter" href="https://twitter.com" target="_blank"> </a></li>
+                  <li> <a class="fab fa-youtube" href="https://www.youtube.com" target="_blank"></a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h4>COMPANY</h4>
+                <ul>
+                  <li><a href="#">CAREERS</a></li>
+                  <li><a href="#">PRESSROOM </a></li>
+                  <li> <a href="#">PRIVACY POLICY</a></li>
+                  <li><a href="#">TERMS & CONDITIONS</a></li>
+                </ul>
               </div>
             </div>
-            <div class="col-lg-5">
-              <h4>
-                <label for="subcribe">GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX</label>
-              </h4>
-              <form class="d-flex" action=""><i class="far fa-envelope d-flex align-items-center h-100"></i>
-                <input id="subcribe" type="email" placeholder=" Enter Your Email to Get News"/>
-                <button class="btn btn-outline-dark d-flex align-items-center justify-content-center"><i class="fas fa-arrow-right"></i></button>
-              </form>
-            </div>
           </div>
+          <div class="col-lg-5">
+            <h4>
+              <label for="subcribe">GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX</label>
+            </h4>
+            <form class="d-flex" action=""><i class="far fa-envelope d-flex align-items-center align-self-center"></i>
+              <input id="subcribe" type="email" placeholder=" Enter Your Email to Get News"/>
+              <button class="btn btn-outline-dark d-flex align-items-center justify-content-center"><i class="fas fa-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container text-center">
+          <p>Copyright © 2020 Workers' Fitness Studio.  This website is only the project for learning Bootstrap4. Website design and build by h.chiu.</p>
         </div>
       </div>
     </footer>
