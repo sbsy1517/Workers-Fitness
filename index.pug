@@ -33,21 +33,29 @@ html(lang="en")
             .menu-hamburger.rwd-underlg
                 .fas.fa-bars.hamburger
             .menu_mobile
-                .wrap.w-100.d-flex.justify-content-between
-                    a(href="#").menu_list.active.title Home
-                    .menu_list About Us
-                        a(href="#").mt-2 Classes
-                        a(href="#") Locations
-                        a(href="#") Trainers
-                    a.menu_list.title(href="#") News
-                    a.menu_list.title(href="#") Shop
-                    .menu_list.title Mebership
-                        a(href='#').mt-2 Login
-                        a(href='#') Sign Up
-                    a.menu_list.title(href="#") Join Us
+                .wrap.w-100
+                    a(href="#").menu_list.active#option Home
+                    hr
+                    a.menu_list(data-toggle="collapse" href="#about_us" role="button" aria-expanded="false" aria-controls="about_us")#about_us_title About Us
+                    .collapse#about_us 
+                        a.collapse_items(href="#") Classes
+                        a.collapse_items(href="#") Locations
+                        a.collapse_items(href="#") Trainers
+                    hr
+                    a.menu_list(href="#")#option News
+                    hr
+                    a.menu_list(href="#")#option Shop
+                    hr
+                    a.menu_list(data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership")#membership_title Membership
+                    .collapse#membership
+                        a.collapse_items(href='#') Login
+                        a.collapse_items(href='#') Sign Up
+                    hr
+                    a.menu_list#option(href="#") Join Us
+        
         section#start.jumbotron.jumbotron-fluid.d-flex.mb-0.p-0
-            //- video(src="source/video/index-30s.mp4" autoplay loop muted)
-            video(src="source/video/index-60s.mp4" autoplay loop muted)
+            video.rwd-underxm(src="source/video/index-30s.mp4" autoplay loop muted)
+            video.rwd-overxm(src="source/video/index-60s.mp4" autoplay loop muted)
             .container
                 .contain
                     h1.slogen.rwd-overmd BE WORKER, BE STRONGER
@@ -240,7 +248,7 @@ html(lang="en")
                 .row
                     .col-lg-7
                         .row.footer_content
-                            .col-4
+                            .footer_list.col-4
                                 h4 ABOUT US
                                 ul
                                     li
@@ -249,7 +257,7 @@ html(lang="en")
                                         a(href="#") LOCATIONS
                                     li
                                         a(href="#") TRAINERS
-                            .col-4
+                            .footer_list.col-4
                                 h4 MEMBERSHIP
                                 ul
                                     li
@@ -259,7 +267,7 @@ html(lang="en")
                                     li
                                         a(href="#") JOIN US
                                     
-                            .col-4
+                            .footer_list.col-4
                                 h4 MORE
                                 ul
                                     li
@@ -271,7 +279,7 @@ html(lang="en")
                                     li
                                         a(href="https://play.google.com/store/apps" target="_blank") ANDROID APP
                             
-                            .col-4
+                            .footer_list.col-4
                                 h4 COMPANY
                                 ul
                                     li
@@ -281,10 +289,10 @@ html(lang="en")
                                     li 
                                         a(href="#") PRIVACY POLICY
                                     li
-                                        a(href="#") TERMS & CONDITIONS        
-                            .col-4
+                                        a.text-nowrap(href="#") TERMS & CONDITIONS        
+                            .footer_list_app.col-4
                                 h4 FIND US ON
-                                ul.social.w-75.d-flex.justify-content-between
+                                ul.social.w-100.d-flex.justify-content-between
                                     li
                                         a(href="https://www.facebook.com" target="_blank").fab.fa-facebook-f
                                     li
@@ -293,6 +301,7 @@ html(lang="en")
                                         a(href="https://twitter.com" target="_blank").fab.fa-twitter  
                                     li 
                                         a(href="https://www.youtube.com" target="_blank").fab.fa-youtube
+                                
                             
                     .col-lg-5
                         h4
@@ -302,6 +311,7 @@ html(lang="en")
                             input#subcribe(type="email" placeholder=" Enter Your Email to Get News")
                             button.btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
                                 i.fas.fa-arrow-right
+                        hr
             .copyright
                 .container.text-center
                     p Copyright © 2020 Workers' Fitness Studio.  This website is only the project for learning Bootstrap4. Website design and build by h.chiu.

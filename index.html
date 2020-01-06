@@ -25,14 +25,20 @@
         <div class="fas fa-bars hamburger"></div>
       </div>
       <div class="menu_mobile">
-        <div class="wrap w-100 d-flex justify-content-between"><a class="menu_list active title" href="#">Home</a>
-          <div class="menu_list">About Us<a class="mt-2" href="#">Classes</a><a href="#">Locations</a><a href="#">Trainers</a></div><a class="menu_list title" href="#">News</a><a class="menu_list title" href="#">Shop</a>
-          <div class="menu_list title">Mebership<a class="mt-2" href="#">Login</a><a href="#">Sign Up</a></div><a class="menu_list title" href="#">Join Us</a>
+        <div class="wrap w-100"><a class="menu_list active" href="#" id="option">Home</a>
+          <hr/><a class="menu_list" data-toggle="collapse" href="#about_us" role="button" aria-expanded="false" aria-controls="about_us" id="about_us_title">About Us</a>
+          <div class="collapse" id="about_us"> <a class="collapse_items" href="#">Classes</a><a class="collapse_items" href="#">Locations</a><a class="collapse_items" href="#">Trainers</a></div>
+          <hr/><a class="menu_list" href="#" id="option">News</a>
+          <hr/><a class="menu_list" href="#" id="option">Shop</a>
+          <hr/><a class="menu_list" data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership" id="membership_title">Membership</a>
+          <div class="collapse" id="membership"><a class="collapse_items" href="#">Login</a><a class="collapse_items" href="#">Sign Up</a></div>
+          <hr/><a class="menu_list" id="option" href="#">Join Us</a>
         </div>
       </div>
     </nav>
     <section class="jumbotron jumbotron-fluid d-flex mb-0 p-0" id="start">
-      <video src="source/video/index-60s.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+      <video class="rwd-underxm" src="source/video/index-30s.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+      <video class="rwd-overxm" src="source/video/index-60s.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
       <div class="container">
         <div class="contain">
           <h1 class="slogen rwd-overmd">BE WORKER, BE STRONGER</h1>
@@ -189,7 +195,7 @@
         <div class="row">
           <div class="col-lg-7">
             <div class="row footer_content">
-              <div class="col-4">
+              <div class="footer_list col-4">
                 <h4>ABOUT US</h4>
                 <ul>
                   <li><a href="#">CLASSES</a></li>
@@ -197,7 +203,7 @@
                   <li><a href="#">TRAINERS</a></li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="footer_list col-4">
                 <h4>MEMBERSHIP</h4>
                 <ul>
                   <li><a href="#">LOGIN</a></li>
@@ -205,7 +211,7 @@
                   <li><a href="#">JOIN US</a></li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="footer_list col-4">
                 <h4>MORE</h4>
                 <ul>
                   <li><a href="#">NEWS</a></li>
@@ -214,18 +220,18 @@
                   <li><a href="https://play.google.com/store/apps" target="_blank">ANDROID APP</a></li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="footer_list col-4">
                 <h4>COMPANY</h4>
                 <ul>
                   <li><a href="#">CAREERS</a></li>
                   <li><a href="#">PRESSROOM </a></li>
                   <li> <a href="#">PRIVACY POLICY</a></li>
-                  <li><a href="#">TERMS & CONDITIONS        </a></li>
+                  <li><a class="text-nowrap" href="#">TERMS & CONDITIONS        </a></li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="footer_list_app col-4">
                 <h4>FIND US ON</h4>
-                <ul class="social w-75 d-flex justify-content-between">
+                <ul class="social w-100 d-flex justify-content-between">
                   <li><a class="fab fa-facebook-f" href="https://www.facebook.com" target="_blank"></a></li>
                   <li><a class="fab fa-instagram" href="https://www.instagram.com" target="_blank"></a></li>
                   <li><a class="fab fa-twitter" href="https://twitter.com" target="_blank"> </a></li>
@@ -242,6 +248,7 @@
               <input id="subcribe" type="email" placeholder=" Enter Your Email to Get News"/>
               <button class="btn btn-outline-dark d-flex align-items-center justify-content-center"><i class="fas fa-arrow-right"></i></button>
             </form>
+            <hr/>
           </div>
         </div>
       </div>

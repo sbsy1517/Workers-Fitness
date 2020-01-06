@@ -1,29 +1,28 @@
 @mixin section_intro
-    +sm
-        h2
-            font-size: 38px
-            text-align: center
-        h2.rwd-oversm
-            display: block           
-            +sm
-                display: none
-        h2.rwd-undersm
+    h2
+        font-size: 38px
+        text-align: center
+    h2.rwd-oversm
+        display: block           
+        +sm
             display: none
-            +sm
-                display: block
-        .line
-            width: 35px
-            height: 4px
-            margin: 20px 0px
-            background-color: $color_orange
-            +x-center
-            +sm
-                margin: 10px 0px
-        p
-            text-align: center
-            +sm
-                font-size: 18px
-                padding: 5px
+    h2.rwd-undersm
+        display: none
+        +sm
+            display: block
+    .line
+        width: 35px
+        height: 4px
+        margin: 20px 0px
+        background-color: $color_orange
+        +x-center
+        +sm
+            margin: 10px 0px
+    p
+        text-align: center
+        +sm
+            font-size: 18px
+            padding: 5px
 
 section#start
     min-height: 800px
@@ -50,6 +49,14 @@ section#start
     +md
         height: 768px
         min-height: auto 
+    video.rwd-underxm
+        display: none
+        +xm
+            display: block
+    video.rwd-overxm
+        display: block
+        +xm
+            display: none
     .container
         z-index: 2
         .contain
@@ -519,9 +526,6 @@ section#newsNshop
                                             width: 130px
                                         +sm
                                             width: 100%
-                                        
-                                    
-                                    
                                 a.app_store
                                     margin-bottom: 20px
                                     +lg
@@ -529,8 +533,6 @@ section#newsNshop
                                     +md
                                         margin-right: 0px
                                     +sm
-                                    
-
                             &:before
                                 content: ""
                                 background-color: $color_ltOrange
@@ -544,9 +546,11 @@ section#newsNshop
                         .owl-carousel.owl-theme
                             .item
                                 height: 600px
-
                                 background-position: center center
                                 background-size: cover
+                                +sm
+                                    height: 500px
+                                
                             .owl-nav
                                 z-index: 2
                                 position: absolute
@@ -560,7 +564,7 @@ section#newsNshop
                                     
                                     &:hover
                                         background-color: $color_ltOrange
-                                        color: $color-black       
+                                        color: $color-black
                             &:before
                                 content: ""
                                 background-color: rgba(0,0,0,0.2)
@@ -570,6 +574,7 @@ section#newsNshop
                                 bottom: 0
                                 top: 0
                                 z-index: 1
+                                
                         .gallery_content
                             position: absolute
                             top: 50%
@@ -580,14 +585,24 @@ section#newsNshop
                             overflow: hidden
                             +md
                                 width: 98%
+                            +sm
+                                padding-left: 20px
                             h4,p
                                 text-align: left
                                 color: $color_white
                                 +md
-                                    width: 62%
+                                    width: 65%
+                                +sm
+                                    width: 80%
+                                +ip5
+                                    width: 90%
+                            h4
+                                +sm
+                                    font-size: 25px
                             p
                                 font-size: 15px
                                 margin-bottom: 20px
+                                
                             button
                                 font-size: 25px
                                 padding: 10px 20px
@@ -610,3 +625,5 @@ section#newsNshop
                                 width: 30px
                                 left: -1px
                                 z-index: 1
+                                +sm
+                                    width: 10px

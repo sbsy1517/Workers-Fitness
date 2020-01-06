@@ -2,43 +2,71 @@
   transform: translateY(0px)
   transition-duration: 0.4s
   background-color: $color_black
+
 .menu_mobile
   background-color: transparent
   color: $color_white
   display: none
-  height: 460px
+  top: 0px
   width: 100%
   z-index: -1
-  padding: 0px 55px 40px
+  padding: 70px 0px 0px
   position: absolute
   left: 0px
-  transform: translateY(-460px)
+  transform: translateY(-600px)
   transition-duration: 0.5s
-  .title
-    box-sizing: border-box
+  +lg
+    display: block
   .active
     color: $color_orange
     font-weight: bold
-  
   a
     color: $color_white
+    display: block
+    text-align: center
     &:hover
       color: $color_ltOrange
   .wrap
-    // margin-bottom: 50px
-    
+    hr
+      border-top: 1px solid rgba($color_white, 0.1)
+      margin: 0
     .menu_list
-      font-size: 20px
+      font-size: 30px
+      padding: 20px 0px
+      +sm
+        font-size: 20px
+      +ip5
+        padding: 10px 0px
+      &:hover
+        background-color: $color_ltOrange
+        color: $color_black
       a
-        font-size: 15px
         display: block
         padding: 5px 0px
-    a.menu_list
-      font-size: 20px
-      height: 44px
-  +lg
-    display: flex
-    align-items: flex-end
+    .collapse,.collapsing
+      background-color: $color_white
+      a
+        font-size: 25px  
+        padding: 10px 0px
+        color: $color_black
+        font-size: 20px
+        &:hover
+          background-color: $color_ltOrange
+          color: $color_black 
+  
+    
+.menu_mobile_top
+    background-color: transparent
+    padding: 100px 0px 0px
+    // +xl
+    //     padding: 30px 0px
+    // +lg
+    //     padding: 20px 0px
+    // +md
+    //     padding: 10px 0px 
+    // +sm
+    //     padding: 10px 0px    
+    
     
 nav a
   color: $color_white
@@ -144,32 +172,53 @@ footer
       .col-lg-7
         margin-bottom: 30px
         .row.footer_content
-          .col-4
+          .footer_list,.footer_list_app
+            
+            margin-top: 20px
             h4 
               font-size: 17px
               font-weight: bold
+              +xm
+                font-size: 15px
+                margin-bottom: 0px
             ul
               padding: 0px
               li
                 list-style-type: none
+                +xm
+                  height: 25px
                 a
                   text-decoration: none
                   font-size: 15px
                   color: $color_grey
                   &:hover
                     color: $color_ltGrey
+                  +xm
+                    font-size: 12px
             ul.social
               left: -5px
               li
                 a
                   padding: 10px 
                   font-size: 25px
+          .footer_list_app.col-12
+            ul
+              li
+                a
+                  font-size: 35px
+                  padding: 10px 15px
       .col-lg-5
         h4
           font-size: 25px
           line-height: 1.5
+          font-weight: bold
+          +md
+            font-size: 20px
+            
         form
           padding-bottom: 40px
+          +lg
+            padding-bottom: 20px
           i 
             position: absolute
             z-index: 1
@@ -185,6 +234,12 @@ footer
           button
             width: 15%
             left: -1px
+        hr
+          display: none
+          margin: 0px
+          +lg
+            display: block
+
   .copyright
     background-color: $color_black
     .container
