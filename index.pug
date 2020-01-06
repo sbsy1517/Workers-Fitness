@@ -50,7 +50,10 @@ html(lang="en")
             video(src="source/video/index-60s.mp4" autoplay loop muted)
             .container
                 .contain
-                    h1.slogen BE WORKER, BE STRONGER
+                    h1.slogen.rwd-overmd BE WORKER, BE STRONGER
+                    h1.slogen.rwd-undermd BE WORKER, 
+                        br
+                        |BE STRONGER
                         
                     a.button(href="#")
                         button(type="button").btn.btn-outline-light FREE PASS
@@ -58,9 +61,11 @@ html(lang="en")
 
         section#about
             .container
-                h2 WE HAVE WHAT YOU NEED
-                .line
-                p Whether you’re just starting out or an old hand, you’ll find what you need for your fitness journey.
+                .section_intro
+                    h2.rwd-oversm WE HAVE WHAT YOU NEED
+                    h2.rwd-undersm ABOUT US
+                    .line
+                    p Whether you’re just starting out or an old hand, you’ll find what you need for your fitness journey.
                 .skew-wrap.rwd-overlg
                     a.about(href="#")
                         h3 CLASSES
@@ -119,17 +124,27 @@ html(lang="en")
                         
         .bgimg(data-parallax="scroll" data-image-src="source/img/index-bg-3.jpg")
             .container
-                .description
-                    h2  CHANGE IS STRONG
-                    p NEVER TOO LATE TO WORKOUT 
+                .description.rwd-oversm
+                
+                    h2 CHANGE IS STRONG
+                    p NEVER TOO LATE TO WORKOUT
                     a.button(href="#")
                         button(type="button").btn.btn-outline-light FIND WORKERS' AND START TODAY
                         
+                .description.rwd-undersm
+                    h2 CHANGE
+                        br
+                        | IS STRONG
+                    p START WORKOUT TODAY 
+                    a.button(href="#")
+                        button(type="button").btn.btn-outline-light FIND WORKERS'
         section#newsNshop
             .container
-                h2 YOU MIGHT WANNA KNOW
-                .line
-                p Whether you’re just starting out or an old hand, you’ll find what you need for your fitness journey.
+                .section_intro
+                    h2.rwd-oversm YOU MIGHT WANNA KNOW
+                    h2.rwd-undersm HIGHLIGHTS
+                    .line
+                    p Here’s what’s happening  in our clubs. News, shop, and more!
                 .row
                     .col-lg-4.side-left
                         .news
@@ -168,7 +183,6 @@ html(lang="en")
                     .col-lg-8.side-right
                         .row
                             .col-lg-6.shop
-
                                 .img(style="background-image: url(source/img/index-shop.jpg)")
                                     a(href="#") WORKERS' SHOP
                                 .shop_contain
@@ -188,13 +202,14 @@ html(lang="en")
                                 .app_contain
                                     h4 GET THE APP
                                     p Manage your account, class schedules, make a personal training appointment and more!
-                                    img.rwd-overlg(src="source/img/index-iphone.png")
-                                    img.rwd-underlg(src="source/img/index-iphone-watch.png", alt="")
                                     .app_link
                                         a.app_store(href="https://www.apple.com/ios/app-store/" , target="_blank")
                                             img(src="source/img/app_store.svg")
                                         a.google_play(href="https://play.google.com/store/apps" , target="_blank")
                                             img(src="source/img/google_play.svg")
+                                    img.rwd-overlg(src="source/img/index-iphone.png")
+                                    img.rwd-underlg(src="source/img/index-iphone-watch.png", alt="")
+                                    
                             .col-12.gallery
                                 .owl-carousel.owl-theme
                                     .item(style="background-image: url(source/img/index-owl-1.jpg)")
@@ -213,10 +228,8 @@ html(lang="en")
                                     h4 WE ARE WORKERS
                                     p Here is what our club members' gym life, want to join us? Be fit, healthier, and stronger, it's never too late starting today.
                                     a.button(href="#")
-                                        button(type="button").btn.btn-outline-light MAKE THE FIRST MOVE
-                                        
-
-                                    
+                                        button.rwd-oversm(type="button").btn.btn-outline-light MAKE THE FIRST MOVE
+                                        button.rwd-undersm(type="button").btn.btn-outline-light JOIN US
                             
 
 

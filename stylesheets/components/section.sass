@@ -1,3 +1,30 @@
+@mixin section_intro
+    +sm
+        h2
+            font-size: 38px
+            text-align: center
+        h2.rwd-oversm
+            display: block           
+            +sm
+                display: none
+        h2.rwd-undersm
+            display: none
+            +sm
+                display: block
+        .line
+            width: 35px
+            height: 4px
+            margin: 20px 0px
+            background-color: $color_orange
+            +x-center
+            +sm
+                margin: 10px 0px
+        p
+            text-align: center
+            +sm
+                font-size: 18px
+                padding: 5px
+
 section#start
     min-height: 800px
     height: 100vh
@@ -33,6 +60,18 @@ section#start
             .slogen
                 font-size: 70px
                 font-weight: bold
+            .slogen.rwd-overmd
+                display: block
+                +md
+                    display: none
+            .slogen.rwd-undermd
+                line-height: 1.5
+                display: none
+                +md
+                    display: block
+                +sm
+                    font-size: 50px
+                    
             a.button 
                 button
                     margin-top:  20px
@@ -60,13 +99,16 @@ section#about
     +lg
         padding: 60px 0px 50px
     .container
-        .line
-            width: 35px
-            height: 4px
-            margin: 20px 0px
-            background-color: $color_orange
-            left: 50%
-            transform: translateX(-50%)
+        .section_intro
+            +section_intro
+            h2.rwd-oversm
+                display: block           
+                +sm
+                    display: none
+            h2.rwd-undersm
+                display: none
+                +sm
+                    display: block
         .skew-wrap.rwd-overlg
             display: flex
             width: 100%
@@ -152,33 +194,43 @@ section#about
                     position: absolute
                     height: 100%
                     width: 100%
-                    // border: 1px solid #000 
                     bottom: 0px
                     color: $color_white
                     .intro
                         position: absolute
                         left: 0
                         bottom: 0
-                        padding: 50px 40px
-                        min-width: 450px
+                        padding: 60px 40px
                         width: 90%
+                        +xm
+                            width: 100%
                         h3
                             font-weight: bold
                             font-size: 50px
+                            +md
+                                font-size: 40px
+                            +sm
+                                font-size: 33px
                         p
                             margin: 0px
                             font-size: 25px
                             letter-spacing: normal
                             word-spacing: normal
+                            +md
+                                font-size: 20px
+                            +sm
+                                font-size: 17px
                         span
                             font-weight: bold
-                            top: 10px
-                            
+                            top: 20px
+                            transition-duration: 0.1s
+                            &:hover
+                                -webkit-filter: drop-shadow(3px 3px 1.5px rgba($color_black, 0.7))
+                                transition-duration: 0.1s
                 &:hover
                     transition: 0.3s
                     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3)
                     .description
-                        // color: $color_white
                         transition: 0.3s
                         transition-delay: 0.2s
                         background-color: rgba(227, 176, 75,0.8)   
@@ -190,8 +242,6 @@ section#about
     background: transparent
     background-size: 100% auto
     background-repeat: no-repeat
-    
-    
     &:before
         content: ""
         background-color: rgba(0,0,0,0.4)
@@ -209,36 +259,40 @@ section#about
         display: flex
         justify-content: center
         .description
-            width: 554px
             h2
                 font-size: 50px
                 font-weight: bold
             p
-                font-size: 30px
-            button
-                margin-top:  10px
-                font-size: 25px
-                padding: 10px 20px
-                &:hover
-                    background-color: $color_orange
-                    border: 1px solid $color_orange
-
+                font-size: 30px  
+            a
+                text-decoration: none
+                button
+                    margin-top:  10px
+                    font-size: 25px
+                    padding: 10px 20px
+                    &:hover
+                        background-color: $color_orange
+        .description.rwd-oversm
+            display: block
+            +sm
+                display: none
+        .description.rwd-undersm
+            display: none
+            +sm
+                display: block
+            h2  
+                font-size: 50px
+                font-weight: bold
+            p
+                font-size: 20px
+            
+                          
 section#newsNshop
     .container
         margin: 60px 0px 15px 0px
-        left: 50%
-        transform: translateX(-50%)
-        h2,p
-            text-align: center
-        .line
-            width: 35px
-            height: 4px
-            margin: 20px 0px
-            background-color: $color_orange
-            left: 50%
-            transform: translateX(-50%)
-        p
-            // margin-bottom: 50px
+        +x-center
+        .section_intro
+            +section_intro
         .row
             .side-left
                 padding: 0px 14px
@@ -263,7 +317,6 @@ section#newsNshop
                         background-color: $color_ltOrange
                         
                     .news_content
-                        // margin-top: 30px
                         a.news_subtitle
                             font-size: 20px
                             color: $color_black
@@ -317,6 +370,7 @@ section#newsNshop
                             background-size: cover
                             background-position: center 
                             
+                            
                             a
                                 padding: 17.5px 35px 
                                 background-color: $color_ltOrange
@@ -327,12 +381,21 @@ section#newsNshop
                                 z-index: 1
                                 text-decoration: none
                                 color: $color_black
+                                +ip5
+                                    padding: 10px 20px
                             +lg
                                 height: 500px
-                                a
+                            +sm
+                                height: 300px
+                            +xm
+                                height: 290px
+                            +ip5
+                                height: 230px
+                                
                         .shop_contain
                             background-color: $color_ltGrey
                             color: $color_black
+                            padding: 0px 20px 
                             a
                                 text-decoration: none
                                 color: $color_black
@@ -340,6 +403,8 @@ section#newsNshop
                                 text-align: center
                                 font-weight: bold
                                 padding: 45px 0px 20px
+                                +ip5
+                                    padding: 40px 0px 10px
                             .merch_button
                                 display: flex
                                 justify-content: center
@@ -357,10 +422,15 @@ section#newsNshop
                                     border-bottom: 1px solid $color_black
                                     border-right: 1px solid $color_black
                                     border-top: 1px solid $color_black
+                            hr
+                                +ip5
+                                    margin: 15px 0px 10px
                             a.shop_link
                                 display: block
                                 text-align: center
                                 padding-bottom: 20px
+                                +ip5
+                                    padding-bottom: 10px
                                 &:hover
                                     color: $color_grey
                     .app
@@ -373,6 +443,9 @@ section#newsNshop
                             height: 100%
                             +md
                                 height: 568px
+                            +sm
+                                height: auto
+                                padding: 30px 35px 20px
                             h4
                                 display: inline-block
                                 padding: 20px 35px 
@@ -380,9 +453,7 @@ section#newsNshop
                                 font-size: 20px
                                 font-weight: bold
                                 background-color: $color_ltOrange
-                               
                             p   
-                                // margin-top: 20px
                                 font-size: 17px   
                                 text-align: left
                                 width: 100%   
@@ -412,6 +483,13 @@ section#newsNshop
                                     display: block
                                 +md
                                    height: 350px 
+                                +sm
+                                    position: relative
+                                    width: 100%
+                                    height: auto
+                                    bottom: 0px
+                                    right: 0px
+                                    
                             .app_link
                                 position: absolute
                                 bottom: 150px
@@ -419,17 +497,30 @@ section#newsNshop
                                     bottom: 75px
                                 +md
                                     bottom: 200px
+                                +sm
+                                    position: relative
+                                    top: 0px
+                                    bottom: 0px
+                                    display: flex
+                                    justify-content: space-between
                                 a
                                     display: block
                                     +lg
                                         display: inline-block
                                     +md
                                         display: block
+                                    +sm
+                                        display: inline-block
+                                        
+                                        width: 47%
                                     img
                                         width: 115px
                                         +lg
                                             width: 130px
+                                        +sm
+                                            width: 100%
                                         
+                                    
                                     
                                 a.app_store
                                     margin-bottom: 20px
@@ -437,6 +528,7 @@ section#newsNshop
                                         margin-right: 10px
                                     +md
                                         margin-right: 0px
+                                    +sm
                                     
 
                             &:before
@@ -486,19 +578,30 @@ section#newsNshop
                             padding-left: 50px
                             width: 60%
                             overflow: hidden
+                            +md
+                                width: 98%
                             h4,p
                                 text-align: left
                                 color: $color_white
+                                +md
+                                    width: 62%
                             p
                                 font-size: 15px
                                 margin-bottom: 20px
                             button
-                                
                                 font-size: 25px
                                 padding: 10px 20px
                                 &:hover
                                     background-color: $color_orange
                                     border: 1px solid $color_orange
+                            button.rwd-oversm
+                                display: block
+                                +sm
+                                    display: none
+                            button.rwd-undersm
+                                display: none
+                                +sm
+                                    display: block
                             &:before
                                 content: ""
                                 background-color: $color_ltOrange

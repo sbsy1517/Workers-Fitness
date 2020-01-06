@@ -14,13 +14,15 @@ $color_ltGrey: #e0e0e0
 html,body
     width: 100%
     // height: auto
-    // overflow-x: hidden
+    overflow-x: hidden
 @mixin center
     position: absolute
     left: 50%
     top: 50%
     transform: translate(-50%, -50%)
-
+@mixin x-center
+    left: 50%
+    transform: translateX(-50%)
 @mixin xl
     @media (max-width: 1366px)
         @content
@@ -32,6 +34,12 @@ html,body
         @content
 @mixin sm
     @media (max-width: 576px)
+        @content
+@mixin xm
+    @media (max-width: 414px)
+        @content
+@mixin ip5
+    @media (max-width: 380px)
         @content
 
 
