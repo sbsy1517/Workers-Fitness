@@ -370,6 +370,9 @@ section#newsNshop
                             background-color: $color_ltGrey
                             overflow: hidden
                             min-height: 380px
+                            height: 100%
+                            +md
+                                height: 568px
                             h4
                                 display: inline-block
                                 padding: 20px 35px 
@@ -389,6 +392,8 @@ section#newsNshop
                                     width: 55%
                                     font-size: 20px
                                     margin-top: 10px
+                                +md
+                                    width: 100%
                             .rwd-overlg
                                 position: absolute
                                 bottom: 25px
@@ -405,26 +410,33 @@ section#newsNshop
                                 right: 35px
                                 +lg
                                     display: block
-
-                                
+                                +md
+                                   height: 350px 
                             .app_link
                                 position: absolute
                                 bottom: 150px
                                 +lg
                                     bottom: 75px
-
+                                +md
+                                    bottom: 200px
                                 a
                                     display: block
                                     +lg
                                         display: inline-block
+                                    +md
+                                        display: block
                                     img
                                         width: 115px
                                         +lg
                                             width: 130px
+                                        
+                                    
                                 a.app_store
                                     margin-bottom: 20px
                                     +lg
                                         margin-right: 10px
+                                    +md
+                                        margin-right: 0px
                                     
 
                             &:before

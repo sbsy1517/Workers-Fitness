@@ -62,6 +62,15 @@ $(document).ready(function(){
   //   $('.hamburger').toggleClass('fa-times').toggleClass('fa-bars');
   // });
   
+
+    
+  $(window).resize(function(){
+    x=$(window).width();
+    if(x>992){
+      $('.menu_mobile').removeClass('open');
+      $('.hamburger').removeClass('fa-times').addClass('fa-bars');
+    };
+  });  
 })
 
 
