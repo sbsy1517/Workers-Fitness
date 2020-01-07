@@ -185,7 +185,7 @@ section#about
                 text-decoration: none
                 margin-top: 15px
                 .img
-                    height: 50vh
+                    height: 400px
                     background-position: center center
                     background-size: cover
                     &:before
@@ -449,7 +449,7 @@ section#newsNshop
                             min-height: 380px
                             height: 100%
                             +md
-                                height: 568px
+                                height: 600px
                             +sm
                                 height: auto
                                 padding: 30px 35px 20px
@@ -484,12 +484,12 @@ section#newsNshop
                                 position: absolute
                                 display: none
                                 height: 320px
-                                bottom: 25px
+                                bottom: 20px
                                 right: 35px
                                 +lg
                                     display: block
                                 +md
-                                   height: 350px 
+                                   height: 400px 
                                 +sm
                                     position: relative
                                     width: 100%
@@ -503,7 +503,7 @@ section#newsNshop
                                 +lg
                                     bottom: 75px
                                 +md
-                                    bottom: 200px
+                                    bottom: 175px
                                 +sm
                                     position: relative
                                     top: 0px
@@ -522,8 +522,11 @@ section#newsNshop
                                         width: 47%
                                     img
                                         width: 115px
+                                        z-index: 2
                                         +lg
                                             width: 130px
+                                        +md
+                                            width: 200px
                                         +sm
                                             width: 100%
                                 a.app_store
@@ -532,7 +535,7 @@ section#newsNshop
                                         margin-right: 10px
                                     +md
                                         margin-right: 0px
-                                    +sm
+                                    
                             &:before
                                 content: ""
                                 background-color: $color_ltOrange
