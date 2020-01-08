@@ -325,13 +325,16 @@ html(lang="en")
                                 
                             
                     .col-lg-5
-                        h4
-                            label(for="subcribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
-                        form(action="").d-flex
-                            i.far.fa-envelope.d-flex.align-items-center.align-self-center
-                            input#subcribe(type="email" placeholder=" Enter Your Email to Get News")
-                            button.btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
-                                i.fas.fa-arrow-right
+                        .form-group
+                            form(action="" novalidate).needs-validation
+                                h4
+                                    label(for="subscribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
+                                .group
+                                    i.far.fa-envelope.d-flex.align-items-center.align-self-center
+                                    input#subscribe(type="email" placeholder=" Enter Your Email to Get News" required).form-control
+                                    .invalid-feedback Please enter a valid email 😭
+                                    button(type="submit").btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
+                                        i.fas.fa-arrow-right
                         hr
             .copyright
                 .container.text-center

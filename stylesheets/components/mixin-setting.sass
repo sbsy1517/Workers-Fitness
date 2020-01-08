@@ -1,0 +1,41 @@
+$color_white: #f8f8f8
+$color_black: #2b2b28
+$color_orange: #e3b04b
+$color_ltOrange: #f1d6ab
+$color_grey: #7a7a7a
+$color_ltGrey: #e0e0e0
+
+*
+    position: relative
+    word-spacing: 2px
+    font-family: 'Roboto', sans-serif
+html,body
+    width: 100%
+    overflow-x: hidden
+@mixin center
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+@mixin x-center
+    left: 50%
+    transform: translateX(-50%)
+@mixin xl
+    @media (max-width: 1366px)
+        @content
+@mixin lg
+    @media (max-width: 992px)
+        @content
+@mixin md
+    @media (max-width: 768px)
+        @content
+@mixin sm
+    @media (max-width: 576px)
+        @content
+@mixin xm
+    @media (max-width: 414px)
+        @content
+@mixin ip5
+    @media (max-width: 374px)
+        @content
+

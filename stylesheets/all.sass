@@ -1,58 +1,22 @@
-$color_white: #f8f8f8
-$color_black: #2b2b28
-$color_orange: #e3b04b
-$color_ltOrange: #f1d6ab
-$color_grey: #7a7a7a
-$color_ltGrey: #e0e0e0
+//reset css
+@import "components/resetCSS.sass"
+  
+//*,html,body,mixin, setting  
+@import "components/mixin-setting.sass"
 
-*
-    position: relative
-    
-    // letter-spacing: 1px
-    word-spacing: 2px
-    font-family: 'Roboto', sans-serif
-html,body
-    width: 100%
-    // height: auto
-    overflow-x: hidden
-@mixin center
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
-@mixin x-center
-    left: 50%
-    transform: translateX(-50%)
-@mixin xl
-    @media (max-width: 1366px)
-        @content
-@mixin lg
-    @media (max-width: 992px)
-        @content
-@mixin md
-    @media (max-width: 768px)
-        @content
-@mixin sm
-    @media (max-width: 576px)
-        @content
-@mixin xm
-    @media (max-width: 414px)
-        @content
-@mixin ip5
-    @media (max-width: 380px)
-        @content
-
-
-    
+// bootstrap
 @import "../node_modules/bootstrap/scss/functions"
 @import "helpers/variables"
 @import "../node_modules/bootstrap/scss/bootstrap"
 
+//OwlCarousel2
 @import "components/owl.carousel.min.css"
 
+//navbar-footer
 @import "components/navbar-footer.sass"
-@import "components/off-canvas.sass"
-@import "components/section.sass"
+
+//index
+@import "components/index-section.sass"
 
 
 

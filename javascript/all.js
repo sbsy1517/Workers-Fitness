@@ -1,10 +1,10 @@
 
 $(document).ready(function(){
+
   $('.bgimg').parallax({
     imageSrc: 'source/img/index-bg-1.jpg',
     speed: 0.3
   });
-
 
   $(window).trigger('resize').trigger('scroll');
   $(window).scroll(function(e){
@@ -24,6 +24,7 @@ $(document).ready(function(){
       scrollTop: $(target).offset().top - 45
     },500);
   });
+
   $('.owl-carousel').owlCarousel({
     loop: true,
     items: 1,
@@ -75,8 +76,26 @@ $(document).ready(function(){
       $('.footer_list').removeClass('col-4').addClass('col-6');
       $('.footer_list_app').removeClass('col-4').addClass('col-12');
     };
-  });  
-})
+  });
+
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+});
 
 
 

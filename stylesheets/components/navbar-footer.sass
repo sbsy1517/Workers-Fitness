@@ -1,75 +1,78 @@
+// offcanvas  
 .menu_mobile.open
   transform: translateY(0px)
-  transition-duration: 0.4s
   background-color: $color_black
-
+  transition-duration: 0.4s
 .menu_mobile
+  display: none
+  position: absolute
+  padding: 70px 0px 0px
+  width: 100%
+  top: 0px
+  left: 0px
   background-color: transparent
   color: $color_white
-  display: none
-  top: 0px
-  width: 100%
-  z-index: -1
-  padding: 70px 0px 0px
-  position: absolute
-  left: 0px
   transform: translateY(-600px)
   transition-duration: 0.5s
+  z-index: -1
   +lg
     display: block
   .active
-    color: $color_orange
     font-weight: bold
+    color: $color_orange
   a
-    color: $color_white
     display: block
     text-align: center
+    color: $color_white
     &:hover
       color: $color_ltOrange
   .wrap
     hr
-      border-top: 1px solid rgba($color_white, 0.1)
       margin: 0
+      border-top: 1px solid rgba($color_white, 0.1)
     .menu_list
-      font-size: 30px
-      padding: 20px 0px
+      padding: 10px 0px
+      font-size: 25px
       +sm
-        font-size: 20px
+        padding: 7px 0px
+        font-size: 23px
       +ip5
-        padding: 10px 0px
+        padding: 8px 0px
+        font-size: 20px
       &:hover
-        background-color: $color_ltOrange
         color: $color_black
+        background-color: $color_ltOrange
       a
         display: block
         padding: 5px 0px
     .collapse,.collapsing
       background-color: $color_white
       a
-        font-size: 25px  
         padding: 10px 0px
-        color: $color_black
         font-size: 20px
+        color: $color_black
+        +sm
+          padding: 7px 0px
+        +ip5
+          padding: 8px 0px
         &:hover
-          background-color: $color_ltOrange
           color: $color_black 
-  
-    
+          background-color: $color_ltOrange
 .menu_mobile_top
-    background-color: transparent
     padding: 100px 0px 0px
+    background-color: transparent
     
-    
+//navbar   
 nav a
   color: $color_white
   &:hover
     color: $color_orange
     text-decoration: none
 nav.myNavbar
-    background-color: $color_black
     padding: 0px 150px
-    z-index: 5
+    background-color: $color_black
     transition-duration: 0.5s
+    z-index: 5
     +xl
       padding: 0px 55px
     +lg
@@ -77,37 +80,41 @@ nav.myNavbar
     +md
       padding: 0px 30px
     +sm
-      padding: 0px 20px    
+      padding: 0px 20px  
+    +ip5
+      padding: 0px 15px  
     .logo
       font-size: 30px
+      +ip5
+        font-size: 25px
     .menu
       .menu_list
-        box-sizing: border-box
-        color: $color_white
-        font-size: 18px
         padding: 20px 30px
+        font-size: 18px
+        color: $color_white
         border: 1.5px solid transparent
+        box-sizing: border-box
         &:hover 
           color: $color_ltOrange
       a.actived
-        border-bottom: 1.5px solid $color_orange
-        color: $color_orange
-        cursor: default
         font-weight: bold
+        color: $color_orange
+        border-bottom: 1.5px solid $color_orange
+        cursor: default
     .menu.rwd-overlg
       display: inline-flex
       +lg
         display: none
     .menu-hamburger.rwd-underlg
       display: none
-      color: $color_white
       padding: 10px 7px
       font-size: 35px
+      color: $color_white
       +lg
         display: inline-block
 nav.myNavbar.navbar-top
-  background-color: transparent
   padding: 30px 150px
+  background-color: transparent
   +xl
       padding: 30px 55px
   +lg
@@ -116,12 +123,13 @@ nav.myNavbar.navbar-top
       padding: 10px 30px 
   +sm
       padding: 10px 20px
+  +ip5
+      padding: 8px 15px 
   .logo
   .menu
-    
     .menu_list
-      border: 1.5px solid transparent
       padding: 10px 30px
+      border: 1.5px solid transparent
       &:hover
         border: 1.5px solid $color_white
     .dropdown
@@ -130,49 +138,45 @@ nav.myNavbar.navbar-top
     a.menu_list.actived
       &:hover
         color: $color_orange
-  
 .dropdown
   .dropdown-content
     display: none
     position: absolute
+    margin-top: 21.5px
+    width: 100%
+    left: 0px
     background-color: $color_white
-    min-width: 100%
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
     z-index: 1
-    left: 0px
-    margin-top: 21.5px
     a
-      color: $color_black
-      padding: 12px 30px
-      text-decoration: none
       display: block
+      padding: 12px 30px
+      color: $color_black
+      text-decoration: none
       &:hover
-        background-color: $color_orange
         color: $color_white
+        background-color: $color_orange
   &:hover
     .dropdown-content
       display: block
 
-
-
 // footer----------------------
 footer
   .site-map
-    background-color: $color_white
     padding: 30px 5% 0px
+    background-color: $color_white
     .row
       .col-lg-7
         margin-bottom: 30px
         .row.footer_content
           .footer_list,.footer_list_app
-            
             margin-top: 20px
             h4 
               font-size: 17px
               font-weight: bold
               +xm
-                font-size: 15px
                 margin-bottom: 0px
+                font-size: 15px
             ul
               padding: 0px
               li
@@ -180,9 +184,9 @@ footer
                 +xm
                   height: 25px
                 a
-                  text-decoration: none
                   font-size: 15px
                   color: $color_grey
+                  text-decoration: none
                   &:hover
                     color: $color_ltGrey
                   +xm
@@ -200,44 +204,56 @@ footer
                   font-size: 35px
                   padding: 10px 15px
       .col-lg-5
-        h4
-          font-size: 25px
-          line-height: 1.5
-          font-weight: bold
-          +md
-            font-size: 20px
-            
-        form
-          padding-bottom: 40px
-          +lg
-            padding-bottom: 20px
-          i 
-            position: absolute
-            z-index: 1
-          i.far.fa-envelope
-            padding: 10px 10px 10px 14px
-            left: 1px
-            background-color: white
-          input
-            height: 50px
-            width: 85%
-            text-indent: 45px
-            font-size: 15px
-          button
-            width: 15%
-            left: -1px
-        hr
-          display: none
-          margin: 0px
-          +lg
-            display: block
-
+        
+        .form-group
+          form
+            padding-bottom: 40px
+            +lg
+              padding-bottom: 20px
+            h4
+              font-size: 25px
+              font-weight: bold
+              line-height: 1.5
+            +md
+              font-size: 20px
+            .group
+              i 
+                position: absolute
+                z-index: 1
+              i.far.fa-envelope
+                padding: 10px 10px 10px 18px
+                height: 100%
+                left: 1px
+                top: 1px
+                background-color: transparent
+              input
+                height: 50px
+                width: 85%
+                font-size: 15px
+                text-indent: 45px
+                background-color: transparent
+                border-radius: 0px
+                border: 1px solid $color_black
+              button
+                position: absolute
+                height: 100%
+                width: 15%
+                bottom: 0px
+                right: 0px
+                border-left: none
+              .invalid-feedback
+                position: absolute
+          hr
+            display: none
+            margin: 0px
+            +lg
+              display: block
   .copyright
     background-color: $color_black
     .container
       p
-        color: $color_grey
-        font-size: 15px
         margin-bottom: 0px
         padding: 20px 0px 20px
+        font-size: 15px
+        color: $color_grey
     
