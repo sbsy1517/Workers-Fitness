@@ -76,7 +76,10 @@ html(lang="en")
                     a.menu_list#option(href="#").actived Join Us
 
         section#img
-            
+
+            h1 BE WORKERS
+                br
+                |JOIN TODAY
             .row
                 .col-md-7
                     .img(style="background-image: url(source/img/join-us/join-us-2.jpg)")
@@ -86,12 +89,12 @@ html(lang="en")
 
         section#join-us   
             .title
-                h1 BUY ONE GET ONE FREE!
+                h2 BUY ONE GET ONE FREE!
                 p JOIN IN A ONE-YEAR CONTRACT NOW AND GET ANOTHER 12 MONTHS FREE PASS
                 //- p OR NOT READY TO JOIN? SIGN UP FOR 7 DAYS FREE PASS OR MORE! 
                 small * Please contact our membership consultants for details.
             
-            form.needs-validation(novalidate='')
+            form.needs-validation(novalidate='')#signupform
                 .container
                     h3 SIGN UP FOR FREE PASS
                     .form-row
@@ -118,7 +121,7 @@ html(lang="en")
                             .invalid-feedback
                                 | Mobile Number is required.
                         .col-md-6.sign-up-for-detail
-                            label(for="preferGym")  Preferred Fitness Centre *
+                            label(for="preferGym")  Preferred Fitness Centre*
                             select#preferGym.form-control(required) 
                                 option(value="")
                                 optgroup(label="-TAIPEI-")
@@ -159,7 +162,6 @@ html(lang="en")
                         .col-md-6.sign-up-for-detail
                             label(for="preferTime") Preferred Contact Time
                             select#preferTime.form-control
-                                option(value="")
                                 option(value="anytime") ANYTIME
                                 option(value="morning") MORNING
                                 option(value="afternoon") AFTERNOON
@@ -173,19 +175,11 @@ html(lang="en")
                                 | policy.
                             .invalid-feedback I've read and agree to theTerms and Data Privacy policy is required.
                     button.btn(type='submit') SUBMIT
-        section#freepass 
-            
+        section#freepass
             .title
-                a.fas.fa-chevron-up(href="#join-us")
+                a.fas.fa-chevron-up(href="#signupform")
                 h2 NOT READY TO JOIN? 
                 p IT'S FINE! YOU STILL CAN SIGN UP THE FORM ABOVE FOR 7 DAYS FREE PASS!
-                
-
-
-
-
-
-
 
         footer
             .site-map
@@ -245,8 +239,6 @@ html(lang="en")
                                         a(href="https://twitter.com" target="_blank").fab.fa-twitter  
                                     li 
                                         a(href="https://www.youtube.com" target="_blank").fab.fa-youtube
-                                
-                            
                     .col-lg-5
                         .form-group
                             form(action="" novalidate).needs-validation
