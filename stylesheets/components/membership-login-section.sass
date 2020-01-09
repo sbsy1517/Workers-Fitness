@@ -14,6 +14,7 @@ section#login
                         font-size: 40px
                         margin-bottom: 20px
                         font-weight: bold
+                        text-align: center
                     .form-row
                         .invalid-feedback
                             position: absolute
@@ -42,15 +43,28 @@ section#login
                             text-decoration: none
                             &:hover
                                 color: $color_ltOrange
-                                // font-weight: bold
+                                
                         button
                             
                             font-weight: bold
-                            color: $color_black
+                            
                             background-color: $color_orange
                             margin-left: auto
+                            i
+                                position: absolute
+                                +center
+                                color: $color_black
+                            p
+                                margin: 0px
+                                color: transparent
                             &:hover
                                 background-color: $color_ltOrange
+
+                                i
+                                    color: transparent
+                                p
+                                    color: $color_black
+                            
                     .sign-in-with
                         margin-top: 15px
                         h4
