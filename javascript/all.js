@@ -1,11 +1,14 @@
 
 $(document).ready(function(){
 
+
+  // parallax
   $('.bgimg').parallax({
     imageSrc: 'source/img/index-bg-1.jpg',
     speed: 0.3
   });
 
+  //index navbar scroll setting
   $(window).trigger('resize').trigger('scroll');
   $(window).scroll(function(e){
     if ($(window).scrollTop()>0){
@@ -17,6 +20,7 @@ $(document).ready(function(){
     };
   });
 
+  //go down and top button setting
   $(document).on("click",'.fa-chevron-down',function(e){
     e.preventDefault();
     let target=$('.fa-chevron-down').attr('href');
@@ -24,7 +28,6 @@ $(document).ready(function(){
       scrollTop: $(target).offset().top - 45
     },500);
   });
-
   $(document).on("click",'.fa-chevron-up',function(e){
     e.preventDefault();
     let target=$('.fa-chevron-up').attr('href');
@@ -33,6 +36,7 @@ $(document).ready(function(){
     },500);
   });
 
+  //owlCarousel
   $('.owl-carousel').owlCarousel({
     loop: true,
     items: 1,
@@ -44,6 +48,7 @@ $(document).ready(function(){
     autoplayHoverPause: true,
   });
 
+  // menu_mobile 
   $('.menu_mobile').on("click",'#about_us_title',function(e){
     $('#membership').collapse('hide')
   }).on("click",'#membership_title', function(e){
@@ -52,7 +57,6 @@ $(document).ready(function(){
     $('#about_us').collapse('hide');
     $("#membership").collapse('hide');
   });
-
   $('.menu-hamburger').click(function(event){
     event.preventDefault();
     $('.menu_mobile').toggleClass('open');
@@ -62,6 +66,7 @@ $(document).ready(function(){
     $("#membership").collapse('hide');
   });
 
+  // navbar resize width to toggle menu_mobile
   $(window).resize(function(){
     x=$(window).width();
     if(x>992){
@@ -86,7 +91,39 @@ $(document).ready(function(){
     };
   });
 
+  // bootstrap validation
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 
+  //memebership login page
+  $('.eyes').on('click',function(e){
+    e.preventDefault();
+    if($('#password').attr('type') == "text"){
+      $('#password').attr('type', 'password');
+      $('.eyes').addClass( "fa-eye-slash" );
+      $('.eyes').removeClass( "fa-eye" );
+    }else if($('#password').attr("type") == "password"){
+      $('#password').attr('type', 'text');
+      $('.eyes').removeClass( "fa-eye-slash" );
+      $('.eyes').addClass( "fa-eye" );
+    }
+  });
+  
   // $('.inputfocusone').focus(function(e){
   //   $('.labelfocusone').css('bottom','50px');
   // });
@@ -124,27 +161,8 @@ $(document).ready(function(){
   //   $('.labelfocussix').css('bottom','0px');
   // });
   
-
-
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  
 });
+
 
 
 
