@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        title WORKERS' FITNESS 
+        meta(charset='UTF-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+        meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+        meta(name="format-detection" content="telephone=no")
+        meta(name='description' content="Start workout today at Workers' Fitness!")
+        meta(property="og:title" content="BE WORKERS, BE STRONGER")
+        meta(property="og:description" content="Change is strong, so start workout at Workers' Fitness today!") 
+        meta(property="og:type" content="website" ) 
+        meta(property="og:url" content="https://sbsy1517.github.io/Workers-Fitness/" ) 
+        meta(property="og:image" content="source/img/index-owl-6.jpg")  
+        meta(name="twitter:title" content="BE WORKERS, BE STRONGER")
+        meta(name="twitter:description" content="Change is strong, so start workout at Workers' Fitness today!")
+        meta(name="twitter:url" content="https://sbsy1517.github.io/Workers-Fitness/")
+        meta(name="twitter:image" content="source/img/index-owl-6.jpg")
+
+        link(href='source/icon/favicon.ico' rel='shortcut icon')
+        link(rel='apple-touch-icon', sizes='57x57', href='source/icon/apple-touch-icon-57x57.png')
+        link(rel='apple-touch-icon', sizes='60x60', href='source/icon/apple-touch-icon-60x60.png')
+        link(rel='apple-touch-icon', sizes='72x72', href='source/icon/apple-touch-icon-72x72.png')
+        link(rel='apple-touch-icon', sizes='76x76', href='source/icon/apple-touch-icon-76x76.png')
+        link(rel='apple-touch-icon', sizes='114x114', href='source/icon/apple-touch-icon-114x114.png')
+        link(rel='apple-touch-icon', sizes='144x144', href='source/icon/apple-touch-icon-144x144.png')
+        link(rel='apple-touch-icon', sizes='120x120', href='source/icon/apple-touch-icon-120x120.png')
+        link(rel='apple-touch-icon', sizes='152x152', href='source/icon/apple-touch-icon-152x152.png')
+        link(rel='apple-touch-icon', sizes='180x180', href='source/icon/apple-touch-icon-180x180.png')
+        
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="stylesheets/components/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
+        link(href='https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional' rel='stylesheet')
+        link(rel='stylesheet' href='stylesheets/join-us.css')
+    body    
+        
+        nav.myNavbar.navbar-top.d-flex.w-100.position-fixed.justify-content-between.align-items-center
+            a.logo(href="index.html") Workers'
+            .menu.rwd-overlg
+                a.menu_list(href="index.html").d-inline-flex Home
+                .dropdown.menu_list About Us
+                    .dropdown-content
+                        a(href="#") Classes
+                        a(href="#") Locations
+                        a(href="#") Trainers
+                a.menu_list(href="#") News
+                a.menu_list(href="#") Shop
+                .dropdown.menu_list Membership
+                    .dropdown-content
+                        a(href='#') Login
+                        a(href='#') Sign Up
+                a.menu_list(href="#").actived Join Us
+            .menu-hamburger.rwd-underlg
+                .fas.fa-bars.hamburger
+            .menu_mobile
+                .wrap.w-100
+                    a(href="index.html").menu_list#option Home
+                    hr
+                    a.menu_list(data-toggle="collapse" href="#about_us" role="button" aria-expanded="false" aria-controls="about_us")#about_us_title About Us
+                    .collapse#about_us 
+                        a.collapse_items(href="#") Classes
+                        a.collapse_items(href="#") Locations
+                        a.collapse_items(href="#") Trainers
+                    hr
+                    a.menu_list(href="#")#option News
+                    hr
+                    a.menu_list(href="#")#option Shop
+                    hr
+                    a.menu_list(data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership")#membership_title Membership
+                    .collapse#membership
+                        a.collapse_items(href='#') Login
+                        a.collapse_items(href='#') Sign Up
+                    hr
+                    a.menu_list#option(href="#").actived Join Us
+
+        section#img
+            
+            .row
+                .col-md-7
+                    .img(style="background-image: url(source/img/join-us/join-us-2.jpg)")
+                .col-md-5
+                    .img(style="background-image: url(source/img/join-us/join-us-1.jpg)")
+                a.fas.fa-chevron-down(href="#join-us")
+
+        section#join-us   
+            .title
+                h1 BUY ONE GET ONE FREE!
+                p JOIN IN A ONE-YEAR CONTRACT NOW AND GET ANOTHER 12 MONTHS FREE PASS
+                //- p OR NOT READY TO JOIN? SIGN UP FOR 7 DAYS FREE PASS OR MORE! 
+                small * Please contact our membership consultants for details.
+            
+            form.needs-validation(novalidate='')
+                .container
+                    h3 SIGN UP FOR FREE PASS
+                    .form-row
+                        .col-md-6.sign-up-for-detail
+                            label(for='firstname')  First Name*
+                            input#firstname.form-control(type='text', placeholder=' ', required )
+                            .invalid-feedback
+                                | First Name is required.
+                        .col-md-6.sign-up-for-detail
+                            label(for="lastname") Last Name*
+                            input#lastname.form-control(type='text', placeholder='', required)
+                            .invalid-feedback
+                                | Last Name is required.
+                        .col-md-6.sign-up-for-detail
+                            label(for='email')  Email*
+                            input#email.form-control(type="email" placeholder="" required)
+                            .invalid-feedback
+                                | Email is required.
+                        .col-md-6.sign-up-for-detail.d-inline-flex.justify-content-between
+                            span.country-code +886
+                            .input_tel.w-100
+                                label.phonenumber(for='phonenumber') Mobile Number*
+                                input#phonenumber.form-control(type="tel" placeholder="" required)
+                            .invalid-feedback
+                                | Mobile Number is required.
+                        .col-md-6.sign-up-for-detail
+                            label(for="preferGym")  Preferred Fitness Centre *
+                            select#preferGym.form-control(required) 
+                                option(value="")
+                                optgroup(label="-TAIPEI-")
+                                    option(value="101 FLAGSHIP") 101 FLAGSHIP
+                                    option(value="XIMEN") XIMEN
+                                    option(value="DAAN") DAAN
+                                    option(value="NEIHU") NEIHU
+                                    option(value="SHILIN") SHILIN
+                                    option(value="WENSHAN") WENSHAN
+                                    option(value="SONGSHAN") SONGSHAN
+                                    option(value="XINYI") XINYI
+                                optgroup(label="-NEW TAIPEI-")
+                                    option(value="BANQIAO") BANQIAO
+                                    option(value="YONGHE") YONGHE
+                                    option(value="DANSHUI") DANSHUI
+                                    option(value="TUCHENG") TUCHENG
+                                    option(value="LINKOU") LINKOU
+                                optgroup(label="-TAOYUAN-") TAOYUAN
+                                    option(value="TAOYUAN") TAOYUAN
+                                    option(value="ZHONGLI") ZHONGLI
+                                optgroup(label="-TAICHUNG-")
+                                    option(value="NANTUN") NANTUN
+                                    option(value="BEITUN") BEITUN
+                                    option(value="YIZHONG") YIZHONG
+                                optgroup(label="-TAINAN-")
+                                    option(value="YONGKANG") YONGKANG
+                                    option(value="CHENGKUNG") CHENGKUNG
+                                    option(value="ANPING") ANPING
+                                    option(value="FOCUS") FOCUS
+                                optgroup(label="-KAOSIUNG-")
+                                    option(value="FENGSHAN") FENGSHAN
+                                    option(value="ZUOYING") ZUOYING
+                                    option(value="NANZI") NANZI
+                                    option(value="GUSHAN") GUSHAN
+                                    option(value="SANMIN") SANMIN
+                            .invalid-feedback
+                                | Preferred Fitness Centre is required.
+                        .col-md-6.sign-up-for-detail
+                            label(for="preferTime") Preferred Contact Time
+                            select#preferTime.form-control
+                                option(value="")
+                                option(value="anytime") ANYTIME
+                                option(value="morning") MORNING
+                                option(value="afternoon") AFTERNOON
+                                option(value="evening") EVENING
+                        .custom-control.custom-checkbox.agree
+                            input#agree.custom-control-input(type='checkbox', required='')
+                            label.custom-control-label(for='agree') I've read and agree to the 
+                                a(href="#") Terms 
+                                | and 
+                                a(href="#") Data Privacy 
+                                | policy.
+                            .invalid-feedback I've read and agree to theTerms and Data Privacy policy is required.
+                    button.btn(type='submit') SUBMIT
+        section#freepass 
+            
+            .title
+                a.fas.fa-chevron-up(href="#join-us")
+                h2 NOT READY TO JOIN? 
+                p IT'S FINE! YOU STILL CAN SIGN UP THE FORM ABOVE FOR 7 DAYS FREE PASS!
+                
+
+
+
+
+
+
+
+        footer
+            .site-map
+                .row
+                    .col-lg-7
+                        .row.footer_content
+                            .footer_list.col-4
+                                h4 ABOUT US
+                                ul
+                                    li
+                                        a(href="#") CLASSES
+                                    li
+                                        a(href="#") LOCATIONS
+                                    li
+                                        a(href="#") TRAINERS
+                            .footer_list.col-4
+                                h4 MEMBERSHIP
+                                ul
+                                    li
+                                        a(href="#") LOGIN
+                                    li
+                                        a(href="#") SIGN UP
+                                    li
+                                        a(href="#") JOIN US
+                                    
+                            .footer_list.col-4
+                                h4 MORE
+                                ul
+                                    li
+                                        a(href="#") NEWS
+                                    li
+                                        a(href="#") SHOP
+                                    li 
+                                        a(href="https://apps.apple.com/us/app/activity/id1208224953" target="_blank") IOS APP
+                                    li
+                                        a(href="https://play.google.com/store/apps" target="_blank") ANDROID APP
+                            
+                            .footer_list.col-4
+                                h4 COMPANY
+                                ul
+                                    li
+                                        a(href="#") CAREERS
+                                    li
+                                        a(href="#") PRESSROOM 
+                                    li 
+                                        a(href="#") PRIVACY POLICY
+                                    li
+                                        a.text-nowrap(href="#") TERMS & CONDITIONS        
+                            .footer_list_app.col-4
+                                h4 FIND US ON
+                                ul.social.w-100.d-flex.justify-content-between
+                                    li
+                                        a(href="https://www.facebook.com" target="_blank").fab.fa-facebook-f
+                                    li
+                                        a(href="https://www.instagram.com" target="_blank").fab.fa-instagram
+                                    li
+                                        a(href="https://twitter.com" target="_blank").fab.fa-twitter  
+                                    li 
+                                        a(href="https://www.youtube.com" target="_blank").fab.fa-youtube
+                                
+                            
+                    .col-lg-5
+                        .form-group
+                            form(action="" novalidate).needs-validation
+                                h4
+                                    label(for="subscribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
+                                .group
+                                    i.far.fa-envelope.d-flex.align-items-center.align-self-center
+                                    input#subscribe(type="email" placeholder=" Enter Your Email to Get News" required).form-control
+                                    .invalid-feedback Please enter a valid email 😭
+                                    button(type="submit").btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
+                                        i.fas.fa-arrow-right
+                        hr
+            .copyright
+                .container.text-center
+                    p Copyright © 2020 Workers' Fitness Studio.  This website is only the project for learning Bootstrap4. Website design and build by h.chiu.
+
+
+        script(src="javascript/jquery.min.js")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+        script(src="javascript/bootstrap.min.js")
+        script(src="javascript/parallax.min.js")
+        script(src="javascript/owl.carousel.min.js")
+        script(src="javascript/all.js")
+
+
+

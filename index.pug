@@ -27,12 +27,13 @@ html(lang="en")
         link(rel='apple-touch-icon', sizes='120x120', href='source/icon/apple-touch-icon-120x120.png')
         link(rel='apple-touch-icon', sizes='152x152', href='source/icon/apple-touch-icon-152x152.png')
         link(rel='apple-touch-icon', sizes='180x180', href='source/icon/apple-touch-icon-180x180.png')
+        
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional")
         link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="stylesheets/components/bootstrap.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
         link(href='https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional' rel='stylesheet')
-        link(rel='stylesheet' href='stylesheets/all.css')
+        link(rel='stylesheet' href='stylesheets/index.css')
     body    
         
         nav.myNavbar.navbar-top.d-flex.w-100.position-fixed.justify-content-between.align-items-center
@@ -50,12 +51,12 @@ html(lang="en")
                     .dropdown-content
                         a(href='#') Login
                         a(href='#') Sign Up
-                a.menu_list(href="#") Join Us
+                a.menu_list(href="join-us.html") Join Us
             .menu-hamburger.rwd-underlg
                 .fas.fa-bars.hamburger
             .menu_mobile
                 .wrap.w-100
-                    a(href="#").menu_list.active#option Home
+                    a(href="#").menu_list.actived#option Home
                     hr
                     a.menu_list(data-toggle="collapse" href="#about_us" role="button" aria-expanded="false" aria-controls="about_us")#about_us_title About Us
                     .collapse#about_us 
@@ -72,7 +73,7 @@ html(lang="en")
                         a.collapse_items(href='#') Login
                         a.collapse_items(href='#') Sign Up
                     hr
-                    a.menu_list#option(href="#") Join Us
+                    a.menu_list#option(href="join-us.html") Join Us
         
         section#start.jumbotron.jumbotron-fluid.d-flex.mb-0.p-0
             //- video.rwd-underxm(src="source/video/index-30s.mp4" autoplay loop muted playsinline controls)
@@ -84,7 +85,7 @@ html(lang="en")
                         br
                         |BE STRONGER
                         
-                    a.button(href="#")
+                    a.button(href="join-us.html")
                         button(type="button").btn.btn-outline-light FREE PASS
                     a.fas.fa-chevron-down(href="#about")
 
@@ -157,7 +158,7 @@ html(lang="en")
                 
                     h2 CHANGE IS STRONG
                     p NEVER TOO LATE TO WORKOUT
-                    a.button(href="#")
+                    a.button(href="join-us.html")
                         button(type="button").btn.btn-outline-light FIND WORKERS' AND START TODAY
                         
                 .description.rwd-undersm
@@ -165,7 +166,7 @@ html(lang="en")
                         br
                         | IS STRONG
                     p START WORKOUT TODAY 
-                    a.button(href="#")
+                    a.button(href="join-us.html")
                         button(type="button").btn.btn-outline-light FIND WORKERS'
         section#newsNshop
             .container
@@ -256,7 +257,7 @@ html(lang="en")
                                 .gallery_content
                                     h4 WE ARE WORKERS
                                     p Here is what our club members' gym life, want to join us? Be fit, healthier, and stronger, it's never too late starting today.
-                                    a.button(href="#")
+                                    a.button(href="join-us.html")
                                         button.rwd-oversm(type="button").btn.btn-outline-light MAKE THE FIRST MOVE
                                         button.rwd-undersm(type="button").btn.btn-outline-light JOIN US
                             
@@ -286,7 +287,7 @@ html(lang="en")
                                     li
                                         a(href="#") SIGN UP
                                     li
-                                        a(href="#") JOIN US
+                                        a(href="join-us.html") JOIN US
                                     
                             .footer_list.col-4
                                 h4 MORE

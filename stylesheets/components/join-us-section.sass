@@ -1,0 +1,125 @@
+section#img
+    margin-top: 65px
+    background-color: $color_white
+    .row
+        .img
+            height: 87vh
+            min-height: 500px
+            background-size: cover
+            background-position: center center
+    a.fas
+        +x-center
+        display: block
+        position: absolute
+        bottom: 50px
+        font-size: 40px
+        color: rgba(248,248,248,0.5)
+        text-decoration: none
+        &:hover
+            color: $color_orange
+            transition: 0.3s
+
+section#join-us
+    background-color: $color_white
+    .title
+        padding: 50px 40px
+        text-align: center
+        color: $color_white
+        background-color: $color_orange
+        cursor: default
+        
+        h1
+            font-size: 70px
+            &:hover
+                -webkit-filter: drop-shadow(3px 3px 1.5px rgba($color_black, 0.7))
+                transition-duration: 0.1s
+        p
+            margin-bottom: 10px
+            font-size: 30px
+            &:hover
+                -webkit-filter: drop-shadow(3px 3px 1.5px rgba($color_black, 0.7))
+                transition-duration: 0.1s
+    form
+        padding: 60px 0px
+        .container
+            padding: 0px 70px
+            h3
+                font-weight: bold
+                font-size: 50px
+                text-align: center
+                color: $color_orange
+            .form-row
+                .sign-up-for-detail
+                    padding: 80px 30px 0px
+                    label
+                        bottom: 0px
+                        font-size: 20px
+                        transition-duration: 0.5s
+                    input,select
+                        padding: 5px 
+                        font-size: 20px
+                        border: none
+                        border-bottom: 1px solid $color_orange
+                        background-color: transparent
+                .country-code
+                    margin-right: 20px
+                    height: 34.8px
+                    width: 42px
+                    font-size: 17px
+                    font-weight: bold
+                    align-self: flex-end
+                    border-bottom: 1px solid $color_orange
+                .input_tel
+                    .phonenumber
+                        transform: translateX(-62px)
+                .agree
+                    margin-top: 50px
+                    +x-center
+                    .custom-control-label:before
+                        color: $color_orange
+                        border-color: $color_orange
+                        background-color: $color_orange
+                    label
+                        a
+                            color: $color_orange
+                            text-decoration: none
+                            &:hover
+                                color: $color_ltOrange
+            button
+                +x-center
+                margin-top: 40px
+                padding: 10px 40px
+                font-weight: bold
+                color: $color_black
+                background-color: $color_orange
+                &:hover
+                    background-color: $color_ltOrange
+section#freepass
+    .title
+        padding: 30px 40px 50px
+        text-align: center
+        color: $color_white
+        background-color: $color_black
+        cursor: default
+        a
+            +x-center
+            display: block
+            font-size: 40px
+            color: $color_white
+            text-decoration: none
+            &:hover
+                color: $color_orange
+                transition: 0.3s
+        h2
+            margin-top: 30px
+            font-size: 70px
+            &:hover
+                color: $color_orange
+                transition-duration: 0.1s
+        p   
+            margin-top: 30px
+            margin-bottom: 10px
+            font-size: 30px
+            &:hover
+                color: $color_orange
+                transition-duration: 0.1s

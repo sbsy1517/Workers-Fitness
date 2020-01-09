@@ -601,20 +601,22 @@ section#newsNshop
                             p
                                 margin-bottom: 20px
                                 font-size: 15px
-                            button
-                                padding: 10px 20px
-                                font-size: 25px
-                                &:hover
-                                    border: 1px solid $color_orange
-                                    background-color: $color_orange
-                            button.rwd-oversm
-                                display: block
-                                +sm
-                                    display: none
-                            button.rwd-undersm
-                                display: none
-                                +sm
+                            a
+                                text-decoration: none
+                                button
+                                    padding: 10px 20px
+                                    font-size: 25px
+                                    &:hover
+                                        border: 1px solid $color_orange
+                                        background-color: $color_orange
+                                button.rwd-oversm
                                     display: block
+                                    +sm
+                                        display: none
+                                button.rwd-undersm
+                                    display: none
+                                    +sm
+                                        display: block
                             &:before
                                 content: ""
                                 position: absolute
