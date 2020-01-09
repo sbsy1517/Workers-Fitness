@@ -24,9 +24,14 @@ section#img
             min-height: 500px
             background-size: cover
             background-position: center center
+            +ip5
+                height: 85vh
+                min-height: 400px
+        .col-md-7,.col-md-5
+            padding: 0px   
         .col-md-7
             display: block
-            +md 
+            +md-less
                 display: none
     a.fas
         +x-center
@@ -55,6 +60,10 @@ section#join-us
                 font-size: 55px
             +lg
                 font-size: 45px
+            +md 
+                font-size: 40px
+            +sm
+                font-size: 35px
             &:hover
                 -webkit-filter: drop-shadow(3px 3px 1.5px rgba($color_black, 0.7))
                 transition-duration: 0.1s
@@ -65,6 +74,8 @@ section#join-us
                 font-size: 25px
             +lg
                 font-size: 20px
+            +sm
+                font-size: 18px
             &:hover
                 -webkit-filter: drop-shadow(3px 3px 1.5px rgba($color_black, 0.7))
                 transition-duration: 0.1s
@@ -80,6 +91,10 @@ section#join-us
                 text-align: center
                 color: $color_orange
                 cursor: default
+                +md
+                    font-size: 40px
+                +sm
+                    font-size: 35px
             .form-row
                 .sign-up-for-detail
                     padding: 80px 30px 0px
@@ -107,6 +122,8 @@ section#join-us
                 .agree
                     margin-top: 50px
                     +x-center
+                    +sm
+                        padding: 0px 30px 0px 60px
                     .custom-control-label:before
                         color: $color_orange
                         border-color: $color_orange
@@ -128,7 +145,7 @@ section#join-us
                     background-color: $color_ltOrange
 section#freepass
     .title
-        padding: 30px 40px 50px
+        padding: 50px 40px 
         text-align: center
         color: $color_white
         background-color: $color_black
@@ -149,6 +166,10 @@ section#freepass
                 font-size: 55px
             +lg
                 font-size: 45px
+            +md 
+                font-size: 40px
+            +sm
+                font-size: 35px
             &:hover
                 color: $color_orange
                 transition-duration: 0.1s
@@ -160,6 +181,8 @@ section#freepass
                 font-size: 25px
             +lg
                 font-size: 20px
+            +sm
+                font-size: 18px
             &:hover
                 color: $color_orange
                 transition-duration: 0.1s

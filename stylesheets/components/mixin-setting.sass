@@ -27,7 +27,10 @@ html,body
     @media (max-width: 992px)
         @content
 @mixin md
-    @media (max-width: 770px)
+    @media (max-width: 768px)
+        @content
+@mixin md-less
+    @media (max-width: 767px)
         @content
 @mixin sm
     @media (max-width: 576px)
