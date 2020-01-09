@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        title WORKERS' FITNESS | JOIN US TO GET ANOTHER 12 MONTHS FREE PASS
+        title WORKERS' FITNESS | MEMBER LOGIN
         meta(charset='UTF-8')
         meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
         meta(http-equiv="X-UA-Compatible" content="IE=Edge")
@@ -16,6 +16,8 @@ html(lang="en")
         meta(name="twitter:description" content="Change is strong, so start workout at Workers' Fitness today!")
         meta(name="twitter:url" content="https://sbsy1517.github.io/Workers-Fitness/")
         meta(name="twitter:image" content="source/img/index-owl-6.jpg")
+
+        
 
         link(href='source/icon/favicon.ico' rel='shortcut icon')
         link(rel='apple-touch-icon', sizes='57x57', href='source/icon/apple-touch-icon-57x57.png')
@@ -33,7 +35,7 @@ html(lang="en")
         link(rel="stylesheet", href="stylesheets/components/bootstrap.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
         link(href='https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional' rel='stylesheet')
-        link(rel='stylesheet' href='stylesheets/join-us.css')
+        link(rel='stylesheet' href='stylesheets/membership-login.css')
     body    
         
         nav.myNavbar.navbar-top.d-flex.w-100.position-fixed.justify-content-between.align-items-center
@@ -47,11 +49,11 @@ html(lang="en")
                         a(href="#") Trainers
                 a.menu_list(href="#") News
                 a.menu_list(href="#") Shop
-                .dropdown.menu_list Membership
+                .dropdown.menu_list.actived Membership
                     .dropdown-content
-                        a(href='membership-login.html') Login
+                        a(href='#') Login
                         a(href='#') Sign Up
-                a.menu_list(href="#").actived Join Us
+                a.menu_list(href="join-us.html") Join Us
             .menu-hamburger.rwd-underlg
                 .fas.fa-bars.hamburger
             .menu_mobile
@@ -69,118 +71,53 @@ html(lang="en")
                     a.menu_list(href="#")#option Shop
                     hr
                     a.menu_list(data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership")#membership_title Membership
-                    .collapse#membership
-                        a.collapse_items(href='membership-login.html') Login
+                    .collapse#membership.actived
+                        a.collapse_items(href='#') Login
                         a.collapse_items(href='#') Sign Up
                     hr
-                    a.menu_list#option(href="#").actived Join Us
+                    a.menu_list#option(href="join-us.html") Join Us
 
-        section#img
+        section#login
 
-            h1 BE WORKERS
-                br
-                |JOIN TODAY
-            .row
-                .col-md-7
-                    .img(style="background-image: url(source/img/join-us/join-us-2.jpg)")
-                .col-md-5
-                    .img(style="background-image: url(source/img/join-us/join-us-1.jpg)")
-                    
-                a.fas.fa-chevron-down(href="#join-us")
-
-        section#join-us   
-            .title
-                h2 BUY ONE GET ONE FREE!
-                p JOIN IN A ONE-YEAR CONTRACT NOW AND GET ANOTHER 12 MONTHS FREE PASS
-                small * Please contact our membership consultants for details.
-            
-            form.needs-validation(novalidate='')#signupform
-                .container
-                    h3 SIGN UP FOR FREE PASS
-                    .form-row
-                        .col-md-6.sign-up-for-detail
-                            label(for='firstname')  FIRST NAME*
-                            input#firstname.form-control(type='text', placeholder=' ', required )
-                            .invalid-feedback
-                                | First Name is required.
-                        .col-md-6.sign-up-for-detail
-                            label(for="lastname") LAST NAME*
-                            input#lastname.form-control(type='text', placeholder='', required)
-                            .invalid-feedback
-                                | Last Name is required.
-                        .col-md-6.sign-up-for-detail
-                            label(for='email')  EMAIL*
-                            input#email.form-control(type="email" placeholder="" required)
-                            .invalid-feedback
-                                | Email is required.
-                        .col-md-6.sign-up-for-detail.d-inline-flex.justify-content-between
-                            span.country-code +886
-                            .input_tel.w-100
-                                label.phonenumber(for='phonenumber') MOBILE NUMBER*
-                                input#phonenumber.form-control(type="tel" placeholder="" required)
-                            .invalid-feedback
-                                | Mobile Number is required.
-                        .col-md-6.sign-up-for-detail
-                            label(for="preferGym")  PREFERRED FITNESS CENTRE*
-                            select#preferGym.form-control(required) 
-                                option(value="")
-                                optgroup(label="-TAIPEI-")
-                                    option(value="101 FLAGSHIP") 101 FLAGSHIP
-                                    option(value="XIMEN") XIMEN
-                                    option(value="DAAN") DAAN
-                                    option(value="NEIHU") NEIHU
-                                    option(value="SHILIN") SHILIN
-                                    option(value="WENSHAN") WENSHAN
-                                    option(value="SONGSHAN") SONGSHAN
-                                    option(value="XINYI") XINYI
-                                optgroup(label="-NEW TAIPEI-")
-                                    option(value="BANQIAO") BANQIAO
-                                    option(value="YONGHE") YONGHE
-                                    option(value="DANSHUI") DANSHUI
-                                    option(value="TUCHENG") TUCHENG
-                                    option(value="LINKOU") LINKOU
-                                optgroup(label="-TAOYUAN-") TAOYUAN
-                                    option(value="TAOYUAN") TAOYUAN
-                                    option(value="ZHONGLI") ZHONGLI
-                                optgroup(label="-TAICHUNG-")
-                                    option(value="NANTUN") NANTUN
-                                    option(value="BEITUN") BEITUN
-                                    option(value="YIZHONG") YIZHONG
-                                optgroup(label="-TAINAN-")
-                                    option(value="YONGKANG") YONGKANG
-                                    option(value="CHENGKUNG") CHENGKUNG
-                                    option(value="ANPING") ANPING
-                                    option(value="FOCUS") FOCUS
-                                optgroup(label="-KAOSIUNG-")
-                                    option(value="FENGSHAN") FENGSHAN
-                                    option(value="ZUOYING") ZUOYING
-                                    option(value="NANZI") NANZI
-                                    option(value="GUSHAN") GUSHAN
-                                    option(value="SANMIN") SANMIN
-                            .invalid-feedback
-                                | Preferred Fitness Centre is required.
-                        .col-md-6.sign-up-for-detail
-                            label(for="preferTime") PREFERRED CONTACT TIME
-                            select#preferTime.form-control
-                                option(value="anytime") ANYTIME
-                                option(value="morning") MORNING
-                                option(value="afternoon") AFTERNOON
-                                option(value="evening") EVENING
-                        .custom-control.custom-checkbox.agree
-                            input#agree.custom-control-input(type='checkbox', required='')
-                            label.custom-control-label(for='agree') I've read and agree to the 
-                                a(href="#") Terms 
-                                | and 
-                                a(href="#") Data Privacy 
-                                |policy.
-                            .invalid-feedback I've read and agree to theTerms and Data Privacy policy is required.
-                    button.btn(type='submit') SUBMIT
-        section#freepass
-            .title
-                a.fas.fa-chevron-up(href="#signupform")
-                h2 NOT READY TO JOIN? 
-                p IT'S FINE! YOU STILL CAN SIGN UP THE FORM ABOVE FOR 7 DAYS FREE PASS!
-
+           
+            .row.d-flex.justify-content-center.align-items-center
+                .col-lg-5
+                    .container
+                        form.needs-validation(novalidate='')#loginform
+                            h3 LOGIN
+                            .form-row
+                                .col-12.loginform
+                                    label(for='email') EMAIL*
+                                    input#email.form-control(type='email', placeholder=' ', required )
+                                    .invalid-feedback
+                                        | Email is required.
+                                .col-12.loginform.mt-40
+                                    label.pw(for="password") PASSWORD*
+                                    .input-password
+                                        input#password.form-control(type='password', placeholder='', required)
+                                        .invalid-feedback
+                                            | Password is required. 
+                                    
+                            .submit.d-flex.align-items-center
+                                a(href="#").forget Forget Password?
+                                button.btn(type='submit') SUBMIT
+                            .sign-in-with
+                                h4 OR
+                                a(href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fgl%3Dus%26hl%3Den%26gws_rd%3Dcr%26pws%3D0&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
+                                    img.signbutton(src="source/img/membership/sign-google.png", alt="")
+                                a(href="https://www.facebook.com/")
+                                    img.signbutton(src="source/img/membership/sign-fb.png", alt="")
+                                
+                                a(href="https://secure1.store.apple.com/tw/shop/sign_in?c=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg&r=SCDHYHP7CY4H9XK2H&s=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg")
+                                    img.signbutton(src="source/img/membership/sign-apple.png", alt="")
+                            .signup Don't have a account?
+                                    br
+                                    a(href="membership-signup.html") LINK UP WITH YOUR MEMBERCARD
+                .col-lg-7
+                    h1 BE WORKER,
+                        br
+                        | BE BETTER
+                    .img(style="background-image: url(source/img/membership/membership-login.jpg)")
         footer
             .site-map
                 .row
@@ -199,11 +136,11 @@ html(lang="en")
                                 h4 MEMBERSHIP
                                 ul
                                     li
-                                        a(href="membership-login.html") LOGIN
+                                        a(href="#") LOGIN
                                     li
                                         a(href="#") SIGN UP
                                     li
-                                        a(href="#") JOIN US
+                                        a(href="join-us.html") JOIN US
                                     
                             .footer_list.col-4
                                 h4 MORE
