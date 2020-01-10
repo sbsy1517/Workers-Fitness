@@ -127,6 +127,7 @@ $(document).ready(function(){
 
   $('.forget').click(function(e){
     e.preventDefault();
+    $(this).removeAttr('href');
   })
   
   // $('.inputfocusone').focus(function(e){
