@@ -123,6 +123,11 @@ $(document).ready(function(){
       $('.eyes').addClass( "fa-eye" );
     }
   });
+
+
+  $('.forget').click(function(e){
+    e.preventDefault();
+  })
   
   // $('.inputfocusone').focus(function(e){
   //   $('.labelfocusone').css('bottom','50px');
