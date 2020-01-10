@@ -41,8 +41,8 @@
         padding: 8px 0px
         font-size: 20px
       &:hover
-        color: $color_black
-        background-color: $color_ltOrange
+        color: $color_white
+        background-color: $color_orange
       a
         display: block
         padding: 5px 0px
@@ -51,14 +51,23 @@
       a
         padding: 10px 0px
         font-size: 20px
+        font-weight: normal
         color: $color_black
         +sm
           padding: 7px 0px
         +ip5
           padding: 8px 0px
         &:hover
-          color: $color_black 
+          color: $color_white 
+          background-color: $color_orange
+    .collapse
+      a.collapse_items.actived
+        font-weight: bold
+        background-color: $color_ltOrange
+        cursor: default
+        &:hover
           background-color: $color_ltOrange
+          
 .menu_mobile_top
     padding: 100px 0px 0px
     background-color: transparent
@@ -122,6 +131,7 @@ nav.myNavbar
     margin-top: 21.5px
     width: 100%
     left: 0px
+    font-weight: normal
     background-color: $color_white
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
     z-index: 1
@@ -133,6 +143,15 @@ nav.myNavbar
       &:hover
         color: $color_white
         background-color: $color_orange
+    a.actived
+      background-color: $color_ltOrange  
+      font-weight: bold
+      color: $color_black
+      cursor: default
+      &:hover
+        background-color: $color_ltOrange
+        color: $color_black
+      
   &:hover
     .dropdown-content
       display: block

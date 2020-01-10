@@ -52,7 +52,7 @@ html(lang="en")
                 a.menu_list(href="#") Shop
                 .dropdown.menu_list.actived Membership
                     .dropdown-content
-                        a(href='#') Login
+                        a(href='#').actived Login
                         a(href='#') Sign Up
                 a.menu_list(href="join-us.html") Join Us
             .menu-hamburger.rwd-underlg
@@ -71,9 +71,9 @@ html(lang="en")
                     hr
                     a.menu_list(href="#")#option Shop
                     hr
-                    a.menu_list(data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership")#membership_title Membership
-                    .collapse#membership.actived
-                        a.collapse_items(href='#') Login
+                    a.menu_list(data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership")#membership_title.actived Membership
+                    .collapse#membership
+                        a.collapse_items.actived(href='#') Login
                         a.collapse_items(href='#') Sign Up
                     hr
                     a.menu_list#option(href="join-us.html") Join Us
