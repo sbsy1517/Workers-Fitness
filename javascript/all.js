@@ -125,10 +125,9 @@ $(document).ready(function(){
   });
 
 
-  $('.forget').click(function(e){
-    e.preventDefault();
-    $(this).removeAttr('href');
-  })
+  $( "#code" ).on('shown', function(){
+    $('body').css('position','fixed');
+  });
   
   // $('.inputfocusone').focus(function(e){
   //   $('.labelfocusone').css('bottom','50px');
