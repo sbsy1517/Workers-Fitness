@@ -17,7 +17,6 @@ html(lang="en")
         meta(name="twitter:url" content="https://sbsy1517.github.io/Workers-Fitness/")
         meta(name="twitter:image" content="source/img/index-owl-6.jpg")
 
-        
 
         link(href='source/icon/favicon.ico' rel='shortcut icon')
         link(rel='apple-touch-icon', sizes='57x57', href='source/icon/apple-touch-icon-57x57.png')
@@ -30,12 +29,14 @@ html(lang="en")
         link(rel='apple-touch-icon', sizes='152x152', href='source/icon/apple-touch-icon-152x152.png')
         link(rel='apple-touch-icon', sizes='180x180', href='source/icon/apple-touch-icon-180x180.png')
         
+        
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional")
         link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="stylesheets/components/bootstrap.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
         link(href='https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional' rel='stylesheet')
         link(rel='stylesheet' href='stylesheets/membership-login.css')
+
     body    
         
         nav.myNavbar.navbar-top.d-flex.w-100.position-fixed.justify-content-between.align-items-center
@@ -79,7 +80,7 @@ html(lang="en")
 
         section#login
             .row.d-flex.justify-content-center.align-items-center
-                .col-lg-5
+                .col-xl-less-5
                     .container
                         form.needs-validation(novalidate='')#loginform
                             h3 LOGIN
@@ -94,12 +95,11 @@ html(lang="en")
                                     .fas.fa-eye-slash.eyes
                                     .input-password
                                         input#password.form-control(type='password', placeholder='', required)
-
                                         .invalid-feedback
                                             | Password is required. 
-                                    
                             .submit.d-flex.align-items-center
-                                a(href="#").forget Forget Password?
+                                button.forget(data-toggle='modal', data-target='#forget-password') 
+                                    span Forget Password?
                                 button.btn(type='submit') 
                                     p LOGIN
                                     i.fas.fa-arrow-right
@@ -115,11 +115,35 @@ html(lang="en")
                             .signup Don't have a account?
                                     br
                                     a(href="membership-signup.html") LINK UP WITH YOUR MEMBERCARD
-                .col-lg-7
+                .col-xl-less-7
                     h1 BE WORKER,
                         br
                         | BE BETTER
                     .img(style="background-image: url(source/img/membership/membership-login.jpg)")
+        
+        
+        
+        // Modal
+        .modal.fade(tabindex='-1', role='dialog', aria-labelledby='forget-passwordTitle', aria-hidden='true')#forget-password
+            .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+                form.needs-validation.modal-content.rounded-0(novalidate='')
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                    .modal-body
+                        h5#forget-passwordTitle.modal-title RESET PASSWORD
+                        
+                        label(for='reset') EMAIL*
+                        input#reset.form-control(type='email', placeholder=' ', required )
+                        .invalid-feedback
+                            | Email is required.
+                        p Enter your email and we'll send you a new password.
+                    .modal-footer
+                        button.back-to-login.btn(type='button', data-dismiss='modal') BACK TO LOGIN
+                        button.btn.reset(type='submit') 
+                            p RESET
+                            i.fas.fa-arrow-right
+
         footer
             .site-map
                 .row

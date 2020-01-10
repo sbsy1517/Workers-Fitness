@@ -113,10 +113,8 @@ nav.myNavbar
       font-size: 35px
       color: $color_white
       +lg
-
         display: inline-block
-nav.myNavbar.navbar-top
-  box-shadow: none
+
 .dropdown
   .dropdown-content
     display: none
@@ -193,8 +191,13 @@ footer
               font-size: 25px
               font-weight: bold
               line-height: 1.5
-            +md
-              font-size: 20px
+              +md
+                font-size: 20px
+              +sm
+                font-size: 18px
+              +ip5
+                font-size: 15px
+              
             .group
               i 
                 position: absolute
@@ -235,4 +238,6 @@ footer
         padding: 20px 0px 20px
         font-size: 15px
         color: $color_grey
-    
+
+nav.myNavbar.navbar-top
+  box-shadow: none   

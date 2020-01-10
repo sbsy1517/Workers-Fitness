@@ -60,7 +60,7 @@
     </nav>
     <section id="login">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-5">
+        <div class="col-xl-less-5">
           <div class="container">
             <form class="needs-validation" novalidate="" id="loginform">
               <h3>LOGIN</h3>
@@ -79,7 +79,8 @@
                   </div>
                 </div>
               </div>
-              <div class="submit d-flex align-items-center"><a class="forget" href="#">Forget Password?</a>
+              <div class="submit d-flex align-items-center">
+                <button class="forget" data-toggle="modal" data-target="#forget-password"> <span>Forget Password?</span></button>
                 <button class="btn" type="submit"> 
                   <p>LOGIN</p><i class="fas fa-arrow-right"></i>
                 </button>
@@ -91,12 +92,35 @@
             </form>
           </div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-xl-less-7">
           <h1>BE WORKER,<br/>BE BETTER</h1>
           <div class="img" style="background-image: url(source/img/membership/membership-login.jpg)"></div>
         </div>
       </div>
     </section>
+    <!-- Modal-->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="forget-passwordTitle" aria-hidden="true" id="forget-password">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <form class="needs-validation modal-content rounded-0" novalidate="">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title" id="forget-passwordTitle">RESET PASSWORD</h5>
+            <label for="reset">EMAIL*</label>
+            <input class="form-control" id="reset" type="email" placeholder=" " required="required"/>
+            <div class="invalid-feedback">Email is required.</div>
+            <p>Enter your email and we'll send you a new password.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="back-to-login btn" type="button" data-dismiss="modal">BACK TO LOGIN</button>
+            <button class="btn reset" type="submit"> 
+              <p>RESET</p><i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer>
       <div class="site-map">
         <div class="row">
