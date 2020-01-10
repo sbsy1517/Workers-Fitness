@@ -69,6 +69,13 @@ $(document).ready(function(){
   // navbar resize width to toggle menu_mobile
   $(window).resize(function(){
     x=$(window).width();
+    if(x>1200){
+      $('.col-signup-5').removeClass('order-1');
+      $('.col-signup-7').removeClass('order-12')
+    }else{
+      $('.col-signup-5').addClass('order-1');
+      $('.col-signup-7').addClass('order-12')
+    };
     if(x>992){
       $('.menu_mobile').removeClass('open');
       $('.hamburger').removeClass('fa-times');
@@ -124,10 +131,12 @@ $(document).ready(function(){
     }
   });
 
-
+  //for ios safari modal
   $( "#code" ).on('shown', function(){
     $('body').css('position','fixed');
   });
+
+
   
   // $('.inputfocusone').focus(function(e){
   //   $('.labelfocusone').css('bottom','50px');

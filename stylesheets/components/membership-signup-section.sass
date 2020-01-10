@@ -1,0 +1,150 @@
+section#signup
+    margin-top: 65px
+    background-color: $color_white
+    .row
+        .col-xl-less-7,.col-xl-less-5
+            padding: 0px 
+        .col-xl-less-5
+            background-color: $color_white
+            .container
+                form
+                    padding: 0px 80px
+                    +xl
+                        padding: 0px 50px
+                    +xl-less
+                        padding: 60px 150px
+                    +lg
+                        padding: 60px 50px
+                    +md
+                        padding: 50px 
+                    +ip5
+                        padding: 40px 
+                    h3
+                        margin-bottom: 10px
+                        font-size: 40px
+                        font-weight: bold
+                        text-align: left
+                        color: $color_orange
+                        +sm
+                            font-size: 35px
+                        +xm
+                            font-size: 25px
+                    a.sign-up-with-email
+                        margin-top: 30px
+                        text-align: center
+                        padding: 20px 0px
+                        font-weight: bold
+                        background-color: $color_orange
+                        width: 100%
+                        display: block
+                        color: $color_white
+                        text-decoration: none
+                        font-size: 30px
+                        +md
+                            padding: 15px 0px
+                        +sm
+                            font-size: 25px
+                        +xm
+                            padding: 10px 
+                            font-size: 20px
+                        +ip5
+                            font-size: 18px
+                        &:hover
+                            background-color: $color_ltOrange
+                            color: $color_black
+                           
+                                
+                    .sign-in-with
+                        margin-top: 30px
+                        h4
+                            display: block
+                            width: 100%
+                            font-size: 20px
+                            text-align: center
+                        a
+                            display: block
+                            justify-content: center
+                            .signbutton
+                                width: 100%
+                                margin: 15px 0px 
+                                height: auto
+                                +sm
+                                    margin: 10px 0px
+                                
+                                &:hover
+                                    -webkit-filter: drop-shadow(3px 3px 2px rgba($color_black, 0.8))
+                    .login
+                        margin-top: 10px
+                        font-size: 15px
+                        text-align: center
+                        +xl-less
+                            margin-top: 60px
+                        +lg
+                            margin-top: 30px
+                        +md
+                            margin-top: 20px
+                        +ip5
+                            font-size: 13px
+                        a
+                            font-weight: bold
+                            text-decoration: none
+                            color: $color_orange
+                            +xl
+                                padding: 10px 0px
+                            +ip5
+                                padding: 13.5px 0px
+                            &:hover
+                                color: $color_ltOrange
+        .col-xl-less-7
+            h1
+                position: absolute
+                padding: 10px 30px
+                right: 7%
+                top: 50%
+                transform: translate(0%, -50%)
+                font-size: 50px
+                color: $color_white
+                border: 4px solid $color_white
+                z-index: 1
+                -webkit-filter: drop-shadow(1px 1px 2px rgba($color_black, 0.8))
+                +lg
+                    font-size: 45px
+            h1.rwd-overmd
+                display: block
+                +md
+                    display: none
+                    
+            h1.rwd-undermd
+                display: none
+                +md
+                    right: 8%
+                    display: block
+                    font-size: 40px
+                    border: 3.5px solid $color_white
+                +sm
+                    padding: 10px 20px
+                    font-size: 30px
+                    border: 3px solid $color_white
+                @media (max-width: 430px)
+                    font-size: 25px
+                    border: 2.5px solid $color_white
+                +ip5
+                    font-size: 20px
+            .img
+                width: 100%
+                height: calc(100vh - 65px)
+                min-height: 695px
+                background-size: cover
+                background-position: center center
+                transform: scaleX(-1)
+                +xl-less
+                    width: 100%
+                    min-height: auto
+                    height: 600px
+                +lg
+                    height: 500px
+                +sm
+                    height: 250px
+                    
+                +ip5
+                    height: 200px

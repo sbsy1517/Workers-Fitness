@@ -35,7 +35,7 @@ html(lang="en")
         link(rel="stylesheet", href="stylesheets/components/bootstrap.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
         link(href='https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional' rel='stylesheet')
-        link(rel='stylesheet' href='stylesheets/membership-login.css')
+        link(rel='stylesheet' href='stylesheets/membership-signup.css')
 
     body    
         
@@ -52,8 +52,8 @@ html(lang="en")
                 a.menu_list(href="#") Shop
                 .dropdown.menu_list.actived Membership
                     .dropdown-content
-                        a(href='#').actived Login
-                        a(href='membership-signup.html') Sign Up
+                        a(href='membership-login.html') Login
+                        a(href='#').actived Sign Up
                 a.menu_list(href="join-us.html") Join Us
             .menu-hamburger.rwd-underlg
                 .fas.fa-bars.hamburger
@@ -73,54 +73,46 @@ html(lang="en")
                     hr
                     a.menu_list(data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership")#membership_title.actived Membership
                     .collapse#membership
-                        a.collapse_items.actived(href='#') Login
-                        a.collapse_items(href='membership-signup.html') Sign Up
+                        a.collapse_items(href='membership-login.html') Login
+                        a.collapse_items.actived(href='#') Sign Up
                     hr
                     a.menu_list#option(href="join-us.html") Join Us
-
-        section#login
+        
+        section#signup
             .row.d-flex.justify-content-center.align-items-center
-                .col-xl-less-5
+                .col-xl-less-7.col-signup-7
+                    h1.rwd-overmd BE WORKER,
+                        br
+                        | BE CONFIDENT
+                    h1.rwd-undermd BE
+                        br
+                        | WORKER,
+                        br
+                        | BE
+                        br
+                        | CONFIDENT
+                    .img(style="background-image: url(source/img/membership/membership-signup.jpg)")
+                .col-xl-less-5.col-signup-5
                     .container
-                        form.needs-validation(novalidate='')#loginform
-                            h3 LOGIN
-                            .form-row
-                                .col-12.loginform
-                                    label(for='email') EMAIL*
-                                    input#email.form-control(type='email', placeholder=' ', required )
-                                    .invalid-feedback
-                                        | Email is required.
-                                .col-12.loginform.mt-40
-                                    label.pw(for="password") PASSWORD*
-                                    .fas.fa-eye-slash.eyes
-                                    .input-password
-                                        input#password.form-control(type='password', placeholder='', required)
-                                        .invalid-feedback
-                                            | Password is required. 
-                            .submit.d-flex.align-items-center
-                                button.forget(data-toggle='modal', data-target='#forget-password') 
-                                    span Forget Password?
-                                button.btn(type='submit') 
-                                    p LOGIN
-                                    i.fas.fa-arrow-right
+                        form.needs-validation(novalidate='')#signupform
+                            h3 SIGN UP
+                            a.sign-up-with-email(href="sign-up-with-email.html") SIGN UP WITH EMAIL
+                                    
+                                    
                             .sign-in-with
                                 h4 OR
                                 a(href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fgl%3Dus%26hl%3Den%26gws_rd%3Dcr%26pws%3D0&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
-                                    img.signbutton(src="source/img/membership/signin-google.png", alt="")
+                                    img.signbutton(src="source/img/membership/signup-google.png", alt="")
                                 a(href="https://www.facebook.com/")
-                                    img.signbutton(src="source/img/membership/signin-fb.png", alt="")
+                                    img.signbutton(src="source/img/membership/signup-fb.png", alt="")
                                 
                                 a(href="https://secure1.store.apple.com/tw/shop/sign_in?c=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg&r=SCDHYHP7CY4H9XK2H&s=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg")
-                                    img.signbutton(src="source/img/membership/signin-apple.png", alt="")
-                            .signup Don't have a account?
+                                    img.signbutton(src="source/img/membership/signup-apple.png", alt="")
+                            .login Have a account?
                                     br
-                                    a(href="membership-signup.html") LINK UP WITH YOUR MEMBER ID
-                .col-xl-less-7
-                    h1 BE WORKER,
-                        br
-                        | BE BETTER
-                    .img(style="background-image: url(source/img/membership/membership-login.jpg)")
-        
+                                    a(href="membership-login.html") LOGIN HERE
+                            
+                
         
         // Modal
         .modal.fade(tabindex='-1', role='dialog', aria-labelledby='forget-passwordTitle', aria-hidden='true')#forget-password
@@ -161,9 +153,9 @@ html(lang="en")
                                 h4 MEMBERSHIP
                                 ul
                                     li
-                                        a(href="#") LOGIN
+                                        a(href="membership-login.html") LOGIN
                                     li
-                                        a(href="membership-signup.html") SIGN UP
+                                        a(href="#") SIGN UP
                                     li
                                         a(href="join-us.html") JOIN US
                                     
@@ -224,6 +216,3 @@ html(lang="en")
         script(src="javascript/parallax.min.js")
         script(src="javascript/owl.carousel.min.js")
         script(src="javascript/all.js")
-
-
-
