@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WORKERS' FITNESS | JOIN US TO GET ANOTHER 12 MONTHS FREE PASS</title>
+    <title>WORKERS' FITNESS | OUR CLASS MAKES YOU FIT AND IT'S WORTHY</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
@@ -31,146 +31,33 @@
     <link rel="stylesheet" href="stylesheets/components/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&amp;display=swap&amp;subset=chinese-traditional" rel="stylesheet"/>
-    <link rel="stylesheet" href="stylesheets/join-us.css"/>
+    <link rel="stylesheet" href="stylesheets/about-us-locations.css"/>
   </head>
   <body>   
     <nav class="myNavbar navbar-top d-flex w-100 position-fixed justify-content-between align-items-center"><a class="logo" href="index.html">Workers'</a>
       <div class="menu rwd-overlg"><a class="menu_list d-inline-flex" href="index.html">Home</a>
-        <div class="dropdown menu_list">About Us
-          <div class="dropdown-content"><a href="about-us-story.html">Story</a><a href="about-us-classes.html">Classes</a><a href="about-us-locations.html">Locations</a><a href="about-us-trainers.html">Trainers</a></div>
+        <div class="dropdown menu_list actived">About Us
+          <div class="dropdown-content"><a href="about-us-story.html">Story</a><a href="about-us-classes.html">Classes</a><a class="actived" href="#">Locations</a><a href="about-us-trainers.html">Trainers</a></div>
         </div><a class="menu_list" href="news.html">News</a><a class="menu_list" href="shop.html">Shop</a>
         <div class="dropdown menu_list">Membership
           <div class="dropdown-content"><a href="membership-login.html">Login</a><a href="membership-signup.html">Sign Up</a></div>
-        </div><a class="menu_list actived" href="#">Join Us</a>
+        </div><a class="menu_list" href="join-us.html">Join Us</a>
       </div>
       <div class="menu-hamburger rwd-underlg">
         <div class="fas fa-bars hamburger"></div>
       </div>
       <div class="menu_mobile">
         <div class="wrap w-100"><a class="menu_list" href="index.html" id="option">Home</a>
-          <hr/><a class="menu_list" data-toggle="collapse" href="#about_us" role="button" aria-expanded="false" aria-controls="about_us" id="about_us_title">About Us</a>
-          <div class="collapse" id="about_us"> <a class="collapse_items" href="about-us-story.html">Story</a><a class="collapse_items" href="about-us-classes.html">Classes</a><a class="collapse_items" href="about-us-locations.html">Locations</a><a class="collapse_items" href="about-us-trainers.html">Trainers</a></div>
+          <hr/><a class="menu_list actived" data-toggle="collapse" href="#about_us" role="button" aria-expanded="false" aria-controls="about_us" id="about_us_title">About Us</a>
+          <div class="collapse" id="about_us"> <a class="collapse_items" href="about-us-story.html">Story</a><a class="collapse_items" href="about-us-classes.html">Classes</a><a class="collapse_items actived" href="#">Locations</a><a class="collapse_items" href="about-us-trainers.html">Trainers</a></div>
           <hr/><a class="menu_list" href="news.html" id="option">News</a>
           <hr/><a class="menu_list" href="shop.html" id="option">Shop</a>
           <hr/><a class="menu_list" data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership" id="membership_title">Membership</a>
           <div class="collapse" id="membership"><a class="collapse_items" href="membership-login.html">Login</a><a class="collapse_items" href="membership-signup.html">Sign Up</a></div>
-          <hr/><a class="menu_list actived" id="option" href="#">Join Us</a>
+          <hr/><a class="menu_list" id="option" href="join-us.html">Join Us</a>
         </div>
       </div>
     </nav>
-    <section id="img">
-      <h1>BE WORKERS<br/>JOIN TODAY</h1>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="img" style="background-image: url(source/img/join-us/join-us-2.jpg)"></div>
-        </div>
-        <div class="col-md-5">
-          <div class="img" style="background-image: url(source/img/join-us/join-us-1.jpg)"></div>
-        </div><a class="fas fa-chevron-down" href="#join-us"></a>
-      </div>
-    </section>
-    <section id="join-us">  
-      <div class="title">
-        <h2>BUY ONE GET ONE FREE!</h2>
-        <p>JOIN IN A ONE-YEAR CONTRACT NOW AND GET ANOTHER 12 MONTHS FREE PASS</p><small>* Please contact our membership consultants for details.</small>
-      </div>
-      <form class="needs-validation" novalidate="" id="signupform">
-        <div class="container">
-          <h3>SIGN UP FOR FREE PASS</h3>
-          <div class="form-row">
-            <div class="col-md-6 sign-up-for-detail">
-              <label for="firstname"> FIRST NAME*</label>
-              <input class="form-control" id="firstname" type="text" placeholder=" " required="required"/>
-              <div class="invalid-feedback">First Name is required.</div>
-            </div>
-            <div class="col-md-6 sign-up-for-detail">
-              <label for="lastname">LAST NAME*</label>
-              <input class="form-control" id="lastname" type="text" placeholder="" required="required"/>
-              <div class="invalid-feedback">Last Name is required.</div>
-            </div>
-            <div class="col-md-6 sign-up-for-detail">
-              <label for="email"> EMAIL*</label>
-              <input class="form-control" id="email" type="email" placeholder="" required="required"/>
-              <div class="invalid-feedback">Email is required.</div>
-            </div>
-            <div class="col-md-6 sign-up-for-detail d-inline-flex justify-content-between"><span class="country-code">+886</span>
-              <div class="input_tel w-100">
-                <label class="phonenumber" for="phonenumber">MOBILE NUMBER*</label>
-                <input class="form-control" id="phonenumber" type="tel" placeholder="" required="required"/>
-              </div>
-              <div class="invalid-feedback">Mobile Number is required.</div>
-            </div>
-            <div class="col-md-6 sign-up-for-detail">
-              <label for="preferGym"> PREFERRED FITNESS CENTRE*</label>
-              <select class="form-control" id="preferGym" required="required"> 
-                <option value=""></option>
-                <optgroup label="-TAIPEI-">
-                  <option value="101 FLAGSHIP">101 FLAGSHIP</option>
-                  <option value="XIMEN">XIMEN</option>
-                  <option value="DAAN">DAAN</option>
-                  <option value="NEIHU">NEIHU</option>
-                  <option value="SHILIN">SHILIN</option>
-                  <option value="WENSHAN">WENSHAN</option>
-                  <option value="SONGSHAN">SONGSHAN</option>
-                  <option value="XINYI">XINYI</option>
-                </optgroup>
-                <optgroup label="-NEW TAIPEI-">
-                  <option value="BANQIAO">BANQIAO</option>
-                  <option value="YONGHE">YONGHE</option>
-                  <option value="DANSHUI">DANSHUI</option>
-                  <option value="TUCHENG">TUCHENG</option>
-                  <option value="LINKOU">LINKOU</option>
-                </optgroup>
-                <optgroup label="-TAOYUAN-">TAOYUAN
-                  <option value="TAOYUAN">TAOYUAN</option>
-                  <option value="ZHONGLI">ZHONGLI</option>
-                </optgroup>
-                <optgroup label="-TAICHUNG-">
-                  <option value="NANTUN">NANTUN</option>
-                  <option value="BEITUN">BEITUN</option>
-                  <option value="YIZHONG">YIZHONG</option>
-                </optgroup>
-                <optgroup label="-TAINAN-">
-                  <option value="YONGKANG">YONGKANG</option>
-                  <option value="CHENGKUNG">CHENGKUNG</option>
-                  <option value="ANPING">ANPING</option>
-                  <option value="FOCUS">FOCUS</option>
-                </optgroup>
-                <optgroup label="-KAOSIUNG-">
-                  <option value="FENGSHAN">FENGSHAN</option>
-                  <option value="ZUOYING">ZUOYING</option>
-                  <option value="NANZI">NANZI</option>
-                  <option value="GUSHAN">GUSHAN</option>
-                  <option value="SANMIN">SANMIN</option>
-                </optgroup>
-              </select>
-              <div class="invalid-feedback">Preferred Fitness Centre is required.</div>
-            </div>
-            <div class="col-md-6 sign-up-for-detail">
-              <label for="preferTime">PREFERRED CONTACT TIME</label>
-              <select class="form-control" id="preferTime">
-                <option value="anytime">ANYTIME</option>
-                <option value="morning">MORNING</option>
-                <option value="afternoon">AFTERNOON</option>
-                <option value="evening">EVENING</option>
-              </select>
-            </div>
-            <div class="custom-control custom-checkbox agree">
-              <input class="custom-control-input" id="agree" type="checkbox" required=""/>
-              <label class="custom-control-label" for="agree">I've read and agree to the <a href="#">Terms </a>and <a href="#">Data Privacy </a>policy.</label>
-              <div class="invalid-feedback">I've read and agree to theTerms and Data Privacy policy is required.</div>
-            </div>
-          </div>
-          <button class="btn" type="submit">SUBMIT</button>
-        </div>
-      </form>
-    </section>
-    <section id="freepass">
-      <div class="title"><a class="fas fa-chevron-up" href="#signupform"></a>
-        <h2>NOT READY TO JOIN? </h2>
-        <p>IT'S FINE! YOU STILL CAN SIGN UP THE FORM ABOVE FOR 7 DAYS FREE PASS!</p>
-      </div>
-    </section>
     <footer>
       <div class="site-map">
         <div class="row">
@@ -181,7 +68,7 @@
                 <ul>
                   <li> <a href="about-us-story.html">STORY</a></li>
                   <li><a href="about-us-classes.html">CLASSES</a></li>
-                  <li><a href="about-us-locations.html">LOCATIONS</a></li>
+                  <li><a href="#">LOCATIONS</a></li>
                   <li><a href="about-us-trainers.html">TRAINERS</a></li>
                 </ul>
               </div>
@@ -190,7 +77,7 @@
                 <ul>
                   <li><a href="membership-login.html">LOGIN</a></li>
                   <li><a href="membership-signup.html">SIGN UP</a></li>
-                  <li><a href="#">JOIN US</a></li>
+                  <li><a href="join-us.html">JOIN US</a></li>
                 </ul>
               </div>
               <div class="footer_list col-4">
@@ -205,7 +92,6 @@
               <div class="footer_list col-4">
                 <h4>COMPANY</h4>
                 <ul>
-                  <li> <a href="about-us-story.html">STORY</a></li>
                   <li><a href="#">CAREERS</a></li>
                   <li><a href="#">PRESSROOM </a></li>
                   <li> <a href="#">PRIVACY POLICY</a></li>
