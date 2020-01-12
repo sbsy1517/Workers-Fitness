@@ -69,29 +69,24 @@ $(document).ready(function(){
   // navbar resize width to toggle menu_mobile
   $(window).resize(function(){
     x=$(window).width();
-    if(x>1200){
-      $('.col-signup-5').removeClass('order-1');
-      $('.col-signup-7').removeClass('order-12')
-    }else{
-      $('.col-signup-5').addClass('order-1');
-      $('.col-signup-7').addClass('order-12')
-    };
+    // if(x>1200){
+    //   $('.col-signup-5').removeClass('order-1');
+    //   $('.col-signup-7').removeClass('order-12')
+    // }else{
+    //   $('.col-signup-5').addClass('order-1');
+    //   $('.col-signup-7').addClass('order-12')
+    // }; ----> 原本想說利用js 去讓 membership sign up頁面 的.col 能RWD調整順序，但因為網頁會先讀取Css在讀取js，導致頁面在手機上一剛開始載入會很明顯看到圖片從上面幾秒之後才跑到下面去，後來利用CSS media RWD解決這個問題，而這段保留當作學習紀錄。
     if(x>992){
       $('.menu_mobile').removeClass('open');
       $('.hamburger').removeClass('fa-times');
       $('#about_us').collapse('hide');
       $("#membership").collapse('hide');
-      $('.site-map').find('.row').find('.col-lg-7').removeClass('order-12');
-      $('.site_map').find('.row').find('.col-lg-5').removeClass('order-1');
     }else{
       $('.hamburger').addClass('fa-bars');
-      $('.site-map').find('.row').find('.col-lg-7').addClass('order-12');
-      $('.site_map').find('.row').find('.col-lg-5').addClass('order-1');
     };
     if(x>500){
       $('.footer_list').removeClass('col-6').addClass('col-4');
       $('.footer_list_app').removeClass('col-12').addClass('col-4')
-      
     }else{
       $('.footer_list').removeClass('col-4').addClass('col-6');
       $('.footer_list_app').removeClass('col-4').addClass('col-12');
