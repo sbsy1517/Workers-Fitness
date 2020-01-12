@@ -201,8 +201,15 @@ footer
                 a
                   font-size: 35px
                   padding: 10px 15px
+      .rwd-overlg
+        display: block
+        +lg
+          display: none
+      .rwd-underlg
+        display: none
+        +lg
+          display: block
       .col-lg-5
-        
         .form-group
           form
             padding-bottom: 40px
@@ -251,10 +258,8 @@ footer
               .invalid-feedback
                 position: absolute
         hr
-          display: none
           margin: 0px
-          +lg
-            display: block
+          
   .copyright
     background-color: $color_black
     .container

@@ -148,6 +148,18 @@ html(lang="en")
         footer
             .site-map
                 .row
+                    .col-lg-5.rwd-underlg
+                        .form-group
+                            form(action="" novalidate).needs-validation
+                                h4
+                                    label(for="subscribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
+                                .group
+                                    i.far.fa-envelope.d-flex.align-items-center.align-self-center
+                                    input#subscribe(type="email" placeholder=" Enter Your Email to Get News" required).form-control
+                                    .invalid-feedback Please enter a valid email 😭
+                                    button(type="submit").btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
+                                        i.fas.fa-arrow-right
+                        hr
                     .col-lg-7
                         .row.footer_content
                             .footer_list.col-4
@@ -205,7 +217,7 @@ html(lang="en")
                                         a(href="https://twitter.com" target="_blank").fab.fa-twitter  
                                     li 
                                         a(href="https://www.youtube.com" target="_blank").fab.fa-youtube
-                    .col-lg-5
+                    .col-lg-5.rwd-overlg
                         .form-group
                             form(action="" novalidate).needs-validation
                                 h4
@@ -216,7 +228,7 @@ html(lang="en")
                                     .invalid-feedback Please enter a valid email 😭
                                     button(type="submit").btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
                                         i.fas.fa-arrow-right
-                        hr
+                        
             .copyright
                 .container.text-center
                     p Copyright © 2020 Workers' Fitness Studio.  This website is only the project for learning Bootstrap4. Website design and build by h.chiu.
