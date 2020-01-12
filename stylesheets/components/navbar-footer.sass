@@ -157,9 +157,11 @@ nav.myNavbar
 
 // footer----------------------
 footer
+  color: $color_black
   .site-map
     padding: 30px 5% 0px
     background-color: $color_white
+    
     .row
       .col-lg-7
         margin-bottom: 30px
@@ -169,6 +171,7 @@ footer
             h4 
               font-size: 17px
               font-weight: bold
+              // color: $color_black
               +xm
                 margin-bottom: 0px
                 font-size: 15px
@@ -226,6 +229,7 @@ footer
                 left: 1px
                 top: 1px
                 background-color: transparent
+                // color: $color_black
               input
                 height: 50px
                 width: 85%
@@ -241,6 +245,9 @@ footer
                 bottom: 0px
                 right: 0px
                 border-left: none
+                color: $color_black
+                &:hover
+                  color: $color_white
               .invalid-feedback
                 position: absolute
         hr

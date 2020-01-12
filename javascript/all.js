@@ -137,6 +137,45 @@ $(document).ready(function(){
   });
 
 
+
+  //membership-signup
+  //sign-up-with-email-btn to check-member
+  $('.sign-up-with-email-btn').on('click',function(e){
+    e.preventDefault();
+    $('#check-member').show().animate({left:'0%'});
+    $('#sign-up-with').hide();
+  });
+  $('#check-member-back').on('click',function(e){
+    e.preventDefault();
+    $('#check-member').hide().animate({left:'101%'});
+    $('#sign-up-with').show();
+  });
+
+  //check-member to link-up-email
+  $('#check-member-next').on('click',function(e){
+    e.preventDefault();
+    $('#link-up').show().animate({left:'0%'});
+    $('#check-member').hide();
+  });
+  $('#link-up-back').on('click',function(e){
+    e.preventDefault();
+    $('#link-up').hide().animate({left:'101%'});
+    $('#check-member').show();
+  });
+
+  //link-up-email to last step verify-mail-back
+  $('#link-up-next').on('click',function(e){
+    e.preventDefault();
+    $('#verify-email').show().animate({left:'0%'});
+    $('#link-up').hide();
+  });
+  $('#verify-mail-back').on('click',function(e){
+    e.preventDefault();
+    $('#verify-email').hide().animate({left:'101%'});
+    $('#link-up').show();
+  });
+
+  
   
   // $('.inputfocusone').focus(function(e){
   //   $('.labelfocusone').css('bottom','50px');

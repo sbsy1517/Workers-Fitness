@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        title WORKERS' FITNESS | MEMBER LOGIN
+        title WORKERS' FITNESS | MEMBER SIGN UP WITH EMAIL OR ACCOUNT
         meta(charset='UTF-8')
         meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
         meta(http-equiv="X-UA-Compatible" content="IE=Edge")
@@ -77,9 +77,8 @@ html(lang="en")
                         a.collapse_items.actived(href='#') Sign Up
                     hr
                     a.menu_list#option(href="join-us.html") Join Us
-        
         section#signup
-            .row.d-flex.justify-content-center.align-items-center
+            .row.justify-content-center.align-items-center
                 .col-xl-less-7.col-signup-7
                     h1.rwd-overmd BE WORKER,
                         br
@@ -91,50 +90,97 @@ html(lang="en")
                         | BE
                         br
                         | CONFIDENT
-                    .img(style="background-image: url(source/img/membership/membership-signup.jpg)")
+                    .img.w-100(style="background-image: url(source/img/membership/membership-signup.jpg)")
                 .col-xl-less-5.col-signup-5
-                    .container
-                        form.needs-validation(novalidate='')#signupform
-                            h3 MEMBER SIGN UP
-                            a.sign-up-with-email(href="sign-up-with-email.html") SIGN UP WITH EMAIL
+                    form.needs-validation(novalidate='')
+                        .container#sign-up-with
+                            .wrap#sign-up-with-btn
+                                h3 MEMBER SIGN UP
+                                button(type=button).sign-up-with-email-btn SIGN UP WITH EMAIL        
+                                .sign-up-with-other-btn
+                                    h4.d-block.w-100 OR
+                                    a(href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fgl%3Dus%26hl%3Den%26gws_rd%3Dcr%26pws%3D0&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
+                                        img.signbtn(src="source/img/membership/signup-google.png", alt="")
+                                    a(href="https://www.facebook.com/")
+                                        img.signbtn(src="source/img/membership/signup-fb.png", alt="")
                                     
-                                    
-                            .sign-in-with
-                                h4 OR
-                                a(href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fgl%3Dus%26hl%3Den%26gws_rd%3Dcr%26pws%3D0&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
-                                    img.signbutton(src="source/img/membership/signup-google.png", alt="")
-                                a(href="https://www.facebook.com/")
-                                    img.signbutton(src="source/img/membership/signup-fb.png", alt="")
-                                
-                                a(href="https://secure1.store.apple.com/tw/shop/sign_in?c=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg&r=SCDHYHP7CY4H9XK2H&s=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg")
-                                    img.signbutton(src="source/img/membership/signup-apple.png", alt="")
-                            .login Have a account?
-                                    br
-                                    a(href="membership-login.html") LOGIN HERE
-                            
-                
-        
-        // Modal
-        .modal.fade(tabindex='-1', role='dialog', aria-labelledby='forget-passwordTitle', aria-hidden='true')#forget-password
-            .modal-dialog.modal-dialog-centered.modal-lg(role='document')
-                form.needs-validation.modal-content.rounded-0(novalidate='')
-                    .modal-header
-                        button.close(type='button', data-dismiss='modal', aria-label='Close')
-                            span(aria-hidden='true') ×
-                    .modal-body
-                        h5#forget-passwordTitle.modal-title RESET PASSWORD
-                        
-                        label(for='reset') EMAIL*
-                        input#reset.form-control(type='email', placeholder=' ', required )
-                        .invalid-feedback
-                            | Email is required.
-                        p Enter your email and we'll send you a new password.
-                    .modal-footer
-                        button.back-to-login.btn(type='button', data-dismiss='modal') BACK TO LOGIN
-                        button.btn.reset(type='submit') 
-                            p RESET
-                            i.fas.fa-arrow-right
+                                    a(href="https://secure1.store.apple.com/tw/shop/sign_in?c=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg&r=SCDHYHP7CY4H9XK2H&s=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3R3L3wxYW9zMzZjY2ViNjgxNGIzN2JmMmM1ZTNmZmQzNjQzYWVjMTE4YWU2ZGRiMg")
+                                        img.signbtn(src="source/img/membership/signup-apple.png", alt="")
+                                .login Have a account?
+                                        br
+                                        a(href="membership-login.html") LOGIN HERE
+                        .container#check-member
+                            .wrap#check-member-form
+                                h3 CHECK MEMBERSHIP
+                                .form-row
+                                    .col-12.check-member-form
+                                        label(for='citizenID') CITIZEN ID*
+                                        input#citizenID.form-control(type='text', placeholder='EX : A123456789', required)
+                                        .invalid-feedback
+                                            | CITIZEN ID is required.
+                                    .col-12.check-member-form.mt-30
+                                        label(for="memberID") MEMBERCARD ID
+                                        input#memberID.form-control(type='text',placeholder='EX : WF010001', required)
+                                        .invalid-feedback
+                                            | MEMBERCARD ID is required.
+                                    .col-12.check-member-form.mt-30
+                                        label(for='birth') DATE OF BIRTH*
+                                        input#birth.form-control(type='text', placeholder='EX : 19961028', required)
+                                        .invalid-feedback
+                                            | Date of birth is required.
+                                .submit.d-flex.align-items-center
+                                    button.back-btn#check-member-back
+                                        span BACK
+                                    button.submit-btn#check-member-next(type='button') 
+                                        p NEXT
+                                        i.fas.fa-arrow-right
+                        .container#link-up
+                            .wrap#link-up-form
+                                h3 LINK UP WITH EMAIL
+                                .form-row
+                                    .col-12.link-up-form
+                                        label(for='email') EMAIL*
+                                        input#email.form-control(type='email', placeholder=' ', required )
+                                        .invalid-feedback
+                                            | Email is required.
+                                    .col-12.link-up-form.mt-30
+                                        label.pw(for="password") PASSWORD*
+                                        .input-password
+                                        input#password.form-control(type='password', placeholder='', required)
+                                        .invalid-feedback
+                                            | Password is required. 
+                                    .col-12.link-up-form.mt-30
+                                        label.comfirm-pw(for="comfirm-password") CONFIRM PASSWORD*
+                                        .input-comfirm-pw
+                                        input#comfirm-pw.form-control(type='password', placeholder='', required)
+                                        .invalid-feedback
+                                            | Confirm password is required. 
+                                .submit.d-flex.align-items-center
+                                    button.back-btn#link-up-back
+                                        span BACK
+                                    button.submit-btn#link-up-next(type='button') 
+                                        p NEXT
+                                        i.fas.fa-arrow-right
+                        .container#verify-email
+                            .wrap#verify-email-form
 
+                                h3 GREAT, LAST STEP!
+                                .form-row
+                                    .col-12.verify-email-form
+                                        label(for='verifyemail') EMAIL VERIFICATION CODE*
+                                        input#verifyemail.form-control(type='text', placeholder=' ', required )
+                                        .invalid-feedback
+                                            | Email verification code is required. 
+                                    .col-12.disabled
+                                        label
+                                        input.form-control(disabled)
+                                        .block.w-100.h-100
+                                .submit.d-flex.align-items-center
+                                    button.back-btn#verify-mail-back
+                                        span BACK
+                                    button.submit-btn(type='submit') 
+                                        p NEXT
+                                        i.fas.fa-arrow-right
         footer
             .site-map
                 .row
