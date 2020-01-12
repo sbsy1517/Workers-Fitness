@@ -135,11 +135,9 @@ $(document).ready(function(){
   $( "#code" ).on('shown', function(){
     $('body').css('position','fixed');
   });
-
-
-
+  
   //membership-signup
-  //sign-up-with-email-btn to check-member
+    //sign-up-with-email-btn to check-member
   $('.sign-up-with-email-btn').on('click',function(e){
     e.preventDefault();
     $('#check-member').show().animate({left:'0%'});
@@ -151,7 +149,7 @@ $(document).ready(function(){
     $('#sign-up-with').show();
   });
 
-  //check-member to link-up-email
+    //check-member to link-up-email
   $('#check-member-next').on('click',function(e){
     e.preventDefault();
     $('#link-up').show().animate({left:'0%'});
@@ -163,7 +161,7 @@ $(document).ready(function(){
     $('#check-member').show();
   });
 
-  //link-up-email to last step verify-mail-back
+    //link-up-email to last step verify-mail-back
   $('#link-up-next').on('click',function(e){
     e.preventDefault();
     $('#verify-email').show().animate({left:'0%'});
