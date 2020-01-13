@@ -1,1 +1,173 @@
+.rwd-underlg
+    display: none
+    +lg
+        display: block
+.rwd-overlg
+    display: block
+    +lg
+        display: none    
+    
+section#header
+    margin-top: 65px
+    color: $color_black
+    background-color: $color_white
+    h1
+        position: absolute
+        padding: 20px 40px
+        font-size: 70px
+        font-weight: bold
+        color: $color_white
+        border: 5px solid $color_white
+        -webkit-filter: drop-shadow(1px 1px 3px rgba($color_black, 0.8))
+        z-index: 2
+        cursor: default
+        +center
+        +xl
+            font-size: 60px
+        +lg
+            font-size: 50px
+            border: 4px solid $color_white
+    .img
+        height: 87vh
+        min-height: 500px
+        background-size: cover
+        background-position: top center
+        +ip5
+            height: 85vh
+            min-height: 400px
+    a.fas
+        +x-center
+        display: block
+        position: absolute
+        bottom: 50px
+        font-size: 40px
+        color: rgba(248,248,248,0.5)
+        text-decoration: none
+        &:hover
+            color: $color_orange
+            transition: 0.3s
+
+.container
+    h2
+        margin-bottom: 20px
+        font-size: 38px
+        font-weight: bold
+        color: $color_orange
+    p
+        margin: 0
+        line-height: 1.5
+        color: $color_grey
 section#story
+    padding-top: 80px
+    .container
+        border-bottom: 1px solid $color_grey
+        p
+            margin-bottom: 30px     
+section#we-provide
+    padding-top: 30px
+    padding-bottom: 100px
+    .container
+        hr
+            margin: 30px 0px
+        .row
+            align-items: stretch
+            h3
+                margin-bottom: 20px
+                font-size: 30px
+                font-weight: bold
+                +lg
+                    position: absolute
+                    padding: 20px 30px
+                    top: 12%
+                    background-color: $color_ltOrange
+                +md
+                    padding: 15px 25px
+                    font-size: 25px
+                +sm
+                    padding: 10px
+                    font-size: 20px
+            p
+                +lg
+                    margin-top: 20px
+                    padding-bottom: 100px
+                +sm
+                    padding-bottom: 80px
+                    font-size: 17px
+                +xm
+                    padding-bottom: 20px
+            a
+                position: absolute
+                bottom: 0px
+                text-align: center
+                text-decoration: none
+                color: $color_black
+                border: 1px solid $color_black
+                i
+                    margin-left: 5px
+                &:hover
+                    background-color: $color_orange
+                    border: 1px solid $color_orange
+                +lg
+                    right: 15px
+                +xm
+                    position: relative
+                    width: 100%
+                    right: 0px
+                    left: 0px
+            a.right
+                right: 15px
+            .img 
+                height: 420px
+                background-size: cover
+                background-position: center center
+                +xl
+                    height: 470px
+                +md-less
+                    height: 320px
+                +sm
+                    height: 250px
+                    
+                
+section#link
+    .title
+        padding: 40px 0px 60px
+        text-align: center
+        color: $color_white
+        background-color: $color_orange
+        cursor: default
+        h2
+            margin-top: 30px
+            font-size: 65px
+            +xl
+                font-size: 55px
+            +lg
+                font-size: 45px
+            +md 
+                font-size: 40px
+            +sm
+                font-size: 35px
+            &:hover
+                color: $color_black
+                transition-duration: 0.1s
+        p   
+            margin: 30px 0px
+            font-size: 30px
+            +xl
+                font-size: 25px
+            +lg
+                font-size: 20px
+            +sm
+                font-size: 18px
+            &:hover
+                color: $color_black
+                transition-duration: 0.1s
+        a
+            text-decoration: none
+            button
+                padding: 10px 20px
+                font-size: 25px
+                color: $color_white
+                &:hover
+                    background-color: $color_black
+                    border-color: $color_black
+                    color: $color_white
