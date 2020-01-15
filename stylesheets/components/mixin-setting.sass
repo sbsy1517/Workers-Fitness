@@ -23,6 +23,8 @@ html,body
 @mixin x-center
     left: 50%
     transform: translateX(-50%)
+
+// media
 @mixin xl
     @media (max-width: 1366px)
         @content
@@ -38,6 +40,9 @@ html,body
 @mixin md-less
     @media (max-width: 767px)
         @content
+@mixin md-700
+    @media (max-width: 700px)
+        @content
 @mixin sm
     @media (max-width: 576px)
         @content
@@ -48,3 +53,73 @@ html,body
     @media (max-width: 374px)
         @content
 
+
+//section-intro
+@mixin section_intro
+    h2
+        font-size: 38px
+        text-align: center
+        color: $color_black
+    h2.rwd-oversm
+        display: block           
+        +sm
+            display: none
+    h2.rwd-undersm
+        display: none
+        +sm
+            display: block
+    .line
+        width: 35px
+        height: 4px
+        margin: 20px 0px
+        background-color: $color_orange
+        +x-center
+        +sm
+            margin: 10px 0px
+    p
+        text-align: center
+        color: $color_black
+        +sm
+            padding: 5px
+            font-size: 18px
+
+
+// about us/news/join us mixin section#header
+@mixin section-header
+    margin-top: 65px
+    background-color: $color_white
+    h1
+        position: absolute
+        padding: 20px 40px
+        font-size: 70px
+        font-weight: bold
+        color: $color_white
+        border: 5px solid $color_white
+        -webkit-filter: drop-shadow(1px 1px 3px rgba($color_black, 0.8))
+        z-index: 2
+        cursor: default
+        +center
+        +xl
+            font-size: 60px
+        +lg
+            font-size: 50px
+            border: 4px solid $color_white
+    .img
+        height: 87vh
+        min-height: 500px
+        background-size: cover
+        background-position: center center
+        +ip5
+            height: 85vh
+            min-height: 400px
+    a.fas
+        +x-center
+        display: block
+        position: absolute
+        bottom: 50px
+        font-size: 40px
+        color: rgba(248,248,248,0.5)
+        text-decoration: none
+        &:hover
+            color: $color_orange
+            transition: 0.3s

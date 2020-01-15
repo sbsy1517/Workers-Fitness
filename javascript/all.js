@@ -47,6 +47,7 @@ $(document).ready(function(){
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
   });
+ 
 
   // menu_mobile 
   $('.menu_mobile').on("click",'#about_us_title',function(e){

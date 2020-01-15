@@ -1,0 +1,150 @@
+nav
+    z-index: 3 !important
+section#header
+    +section-header
+    +ip5
+        h1
+            font-size: 40px
+section#classes
+    padding-top: 80px
+    +lg
+        padding-top: 60px
+    .container
+        .section_intro
+            +section_intro
+            margin-bottom: 40px
+    .carousel.slide
+        .carousel-inner
+            .carousel-item
+                .img
+                    height: 80vh
+                    min-height: 500px
+                    background-size: cover
+                    background-position: top center
+                    +lg
+                        height: 600px
+                    +md
+                        height: 400px
+                        min-height: auto
+                    +sm
+                        height: 300px
+                    +xm
+                        height: 280px
+                    +ip5
+                        height: 200px
+            .carousel-caption
+                position: absolute
+                padding: 50px 120px 90px 
+                width: 100%
+                left: 0
+                bottom: 0
+                text-align: left
+                background-color:   rgba($color_black,0.5)
+                z-index: 0 !important
+                +xl-less
+                    padding: 50px 80px 90px
+                +md
+                    position: relative
+                    padding: 40px
+                    height: 330px
+                    background-color: $color_black
+                +md-700
+                    height: 360px
+                +sm
+                    padding: 20px
+                +xm
+                    height: 330px
+                +ip5
+                    padding: 15px
+                h3
+                    font-weight: bold
+                    font-size: 50px
+                    +md
+                        font-size: 38px
+                    +sm
+                        font-size: 30px
+                    +xm
+                        font-size: 28px
+                    +ip5
+                        font-size: 20px
+                p
+                    font-size: 18px
+                    +sm
+                        font-size: 17px
+                        line-height: 1.5
+                    +xm
+                        font-size: 15px
+                    
+        .slidebtn
+            position: absolute
+            bottom: 0
+            right: 120px
+            +md
+                right: 0
+                top: 318px
+            +sm
+                top: 218px
+            +xm
+                top: 198px
+            +ip5
+                top: 150px
+            a
+                display: inline-block
+                padding: 20px 40px 
+                font-size: 40px
+                color: $color_white
+                +md
+                    padding: 15px 35px
+                    font-size: 35px
+                +ip5
+                    padding: 10px 20px
+                    font-size: 20px
+                &:hover
+                    color: $color-black
+                    background-color: $color_ltOrange
+                    +xm
+                        color: $color_orange
+                        background-color: transparent
+section#link
+    .title
+        padding: 40px 0px 60px
+        text-align: center
+        color: $color_white
+        background-color: $color_orange
+        cursor: default
+        h2
+            margin-top: 30px
+            font-size: 65px
+            +xl
+                font-size: 55px
+            +lg
+                font-size: 45px
+            +md 
+                font-size: 40px
+            +sm
+                font-size: 35px
+            &:hover
+                color: $color_black
+                transition-duration: 0.1s
+        p   
+            margin: 30px 0px
+            font-size: 30px
+            +xl
+                font-size: 25px
+            +lg
+                font-size: 20px
+            +sm
+                font-size: 18px
+            &:hover
+                color: $color_black
+                transition-duration: 0.1s
+        a
+            text-decoration: none
+            button
+                padding: 10px 20px
+                font-size: 25px
+                color: $color_white
+                &:hover
+                    background-color: $color_black
+                    border-color: $color_black
+                    color: $color_white

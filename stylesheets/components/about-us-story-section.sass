@@ -8,45 +8,10 @@
         display: none    
     
 section#header
-    margin-top: 65px
-    color: $color_black
-    background-color: $color_white
-    h1
-        position: absolute
-        padding: 20px 40px
-        font-size: 70px
-        font-weight: bold
-        color: $color_white
-        border: 5px solid $color_white
-        -webkit-filter: drop-shadow(1px 1px 3px rgba($color_black, 0.8))
-        z-index: 2
-        cursor: default
-        +center
-        +xl
-            font-size: 60px
-        +lg
-            font-size: 50px
-            border: 4px solid $color_white
+    +section-header
     .img
-        height: 87vh
-        min-height: 500px
-        background-size: cover
         background-position: top center
-        +ip5
-            height: 85vh
-            min-height: 400px
-    a.fas
-        +x-center
-        display: block
-        position: absolute
-        bottom: 50px
-        font-size: 40px
-        color: rgba(248,248,248,0.5)
-        text-decoration: none
-        &:hover
-            color: $color_orange
-            transition: 0.3s
-
+        
 .container
     h2
         margin-bottom: 20px
