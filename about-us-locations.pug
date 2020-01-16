@@ -80,6 +80,164 @@ html(lang="en")
                     hr
                     a.menu_list#option(href="join-us.html") Join Us
         
+        section#header
+            h1  FIND US
+                br
+                | AT WORKERS'
+            .img(style="background-image: url(source/img/about-us/about-us-locations-1.jpg)")
+            a.fas.fa-chevron-down(href="#classes") 
+        section#equipment
+            .container
+                .section_intro
+                    h2.rwd-oversm PREMIUM EQUIPMENTS
+                    h2.rwd-undersm EQUIPMENTS
+                    .line
+                    p Amenities vary by location, but often include premium equipment to make you stronger.
+            .carousel.slide(data-ride='carousel')#classes-img
+                .carousel-inner
+                    .carousel-item.active
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-2.jpg)")
+                        .carousel-caption
+                            h3 STRENGTH MACHINES
+                            p Every WORKERS' has broad selection of strength machines to help you get stronger.  With selectorized strength machines, you can target individual areas and muscle groups and attack them from different angles.  We work with the best manufacturers in the world to make sure you have the best equipment possible to help you succeed.  Whether you want to get big, get lean or get strong, we have the options for you.
+                    .carousel-item
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-3.jpg)")
+                        .carousel-caption
+                            h3 CARDIO EQUIPMENT
+                            p Looking to work up a sweat?  Cardio machines are among the most popular amenities at our gyms.  With elliptical machines, treadmills, stationary bikes, stair climbers and more, we have the tools to get your heart rate up and keep it there.   Some of our members use cardio to warm up and others use it to build endurance. Whatever your fitness goals, we’ll help you step it up on top-of-the-line machines.
+                    .carousel-item
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-4.jpg)")
+                        .carousel-caption
+                            h3 FREE WEIGHTS
+                            p We have barbells, dumbbells, racks and benches, the core of any good strength training program.  Whether you’re an Olympic lifter, a powerlifter, a casual lifter or a first-time lifter, you’ll find everything you need to lift something heavy.
+                    .carousel-item
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-5.jpg);background-position: bottom center")
+                        .carousel-caption
+                            h3 CROSSFIT
+                            p CrossFit is a lifestyle characterized by safe, effective exercise and sound nutrition. CrossFit can be used to accomplish any goal, from improved health to weight loss to better performance. The program works for everyone—people who are just starting out and people who have trained for years.
+                    .carousel-item
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-6.jpg);background-position: bottom center")
+                        .carousel-caption
+                            h3 PERSONAL TRAINING
+                            p If you’re serious about improving your fitness, there is no better way to make a commitment than by scheduling a session with our world-class coaching staff.  With rigorous training and certifications, our staff will create a customized fitness program to help you be your best self.  Our staff will evaluate your body composition, strength, mobility, stamina, speed and nutrition and help you develop goals to improve each of them.  The first step is just deciding to start.
+                    .carousel-item
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-7.jpg)")
+                        .carousel-caption
+                            h3 SWIMMING POOL
+                            p Challenge your whole body when you work out in a pool. The water will add resistance as you perform cardiovascular and strength exercise. We’ll take you through non-stop movements based on 6 moving patterns. The class starts off low impact, slowly building in intensity. You’ll tone your muscles, increase your range of movement, and improve your endurance, balance and flexibility. 
+                    .carousel-item
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-8.jpg)")
+                        .carousel-caption
+                            h3 MULTI-FUNCTIONAL TRAINING
+                            p Large area for MULTI-FUNCTIONAL Training，offering wide range of modern fitness equipment, including Monkey Bar, TRX Suspension Trainer®, ViPR, Rip™ Trainer, Battling Rope, Octane elliptical and more, small group exercises are also offering for customers.
+                    .carousel-item
+                        .img.d-block.w-100(style="background-image: url(source/img/about-us/about-us-locations-9.jpg)")
+                        .carousel-caption
+                            h3 Nak Muay
+                            p Master the 8 weapons of Nak Muay. In 30 minutes, you’ll learn how to use kicks, punches, and elbow and knee strikes in a variety of fight combinations. We’ll adjust the complexity and intensity of each move depending on your experience. You’ll get stronger, leaner and fitter overall.
+                .slidebtn
+                    a(href='#classes-img', role='button', data-slide='prev')
+                        i.fas.fa-chevron-left
+                    a(href='#classes-img', role='button', data-slide='next')
+                        i.fas.fa-chevron-right
+        section#map
+            .container
+                .section_intro
+                    h2.rwd-oversm FIND THE NEAREST WORKERS'
+                    h2.rwd-undersm FIND WORKERS'
+                    .line
+                    p Start here to find the Workers' nearest you along with location information, amenities and hours.
+                .row
+                    .custom-google-map.col-md-7
+                        iframe(src="https://www.google.com/maps/d/u/0/embed?mid=1IHv09IkD39miMGFIUc8m1f7GwyMj5wf8&z=7&hl=en" ).w-100
+                        .banner-rwd-overmd.justify-content-between.w-100
+                            h3 WORKERS' LOCATIONS
+                            a(href="https://www.google.com/maps/d/u/0/viewer?mid=1IHv09IkD39miMGFIUc8m1f7GwyMj5wf8&hl=en&ll=23.71200216769783%2C120.8205351366812&z=7" target="_blank")
+                                i.fas.fa-map
+                    form.needs-validation(novalidate='')#searchgym.col-md-5.h-100
+                        .form-row
+                            .country.col-12.searchgym
+                                label(for="COUNTRY") COUNTRY
+                                select#COUNTRY.form-control(required) 
+                                    option(value="TAIWAN" selected) TAIWAN
+                            .city.col-12.searchgym
+                                label(for="city") CITY
+                                select#city.form-control(required)
+                                    option(value="TAIPEI") TAIPEI
+                                    option(value="NEW TAIPEI") NEW TAIPEI
+                                    option(value="TAOYUAN") TAOYUAN
+                                    option(value="HSINCHU") HSINCHU
+                                    option(value="TAICHUNG") TAICHUNG
+                                    option(value="CHIAYI") CHIAYI
+                                    option(value="TAINAN") TAINAN
+                                    option(value="KAOSIUNG") KAOSIUNG
+                                    option(value="PINGTUNG") PINGTUNG
+                                    option(value="HUANLIEN") HUANLIEN
+                                .invalid-feedback
+                                    | City is required.
+                            .zip.col-12.searchgym
+                                label(for='zip')  ZIP CODE*
+                                input#zip.form-control(type='text', placeholder='ZIP CODE', required )
+                                .invalid-feedback
+                                    | Zip code is required.
+                            .radius.col-12.searchgym
+                                label(for="radius") RADIUS CODE
+                                select#radius.form-control
+                                    option(value="5 miles") 5 MILES FOR ZIP CODE
+                                    option(value="10 miles") 10 MILES FOR ZIP CODE
+                                    option(value="25 miles") 25 MILES FOR ZIP CODE
+                                    option(value="50 miles" selected) 50 MILES FOR ZIP CODE
+                        button.btn(type='submit') SEARCH
+            form.needs-validation(novalidate='')#searchgym.rwd-undermd
+                .container
+                    .form-row
+                        .country.col-12.searchgym
+                            label(for="COUNTRY") COUNTRY
+                            select#COUNTRY.form-control(required) 
+                                option(value="TAIWAN" selected) TAIWAN
+                        .city.col-6.searchgym
+                            label(for="city") CITY
+                            select#city.form-control(required)
+                                option(value="TAIPEI") TAIPEI
+                                option(value="NEW TAIPEI") NEW TAIPEI
+                                option(value="TAOYUAN") TAOYUAN
+                                option(value="HSINCHU") HSINCHU
+                                option(value="TAICHUNG") TAICHUNG
+                                option(value="CHIAYI") CHIAYI
+                                option(value="TAINAN") TAINAN
+                                option(value="KAOSIUNG") KAOSIUNG
+                                option(value="PINGTUNG") PINGTUNG
+                                option(value="HUANLIEN") HUANLIEN
+                            .invalid-feedback
+                                | City is required.
+                        .zip.col-6.searchgym
+                            label(for='zip')  ZIP CODE*
+                            input#zip.form-control(type='text', placeholder='ZIP CODE', required )
+                            .invalid-feedback
+                                | Zip is required.
+                        .radius.col-12.searchgym
+                            label(for="radius") RADIUS CODE
+                            select#radius.form-control
+                                option(value="5 miles") 5 MILES FOR ZIP CODE
+                                option(value="10 miles") 10 MILES FOR ZIP CODE
+                                option(value="25 miles") 25 MILES FOR ZIP CODE
+                                option(value="50 miles" selected) 50 MILES FOR ZIP CODE
+                button.btn(type='submit') SEARCH
+            .wrap
+                .banner-rwd-undermd.justify-content-between.w-100
+                    h3 WORKERS' LOCATIONS
+                    a(href="https://www.google.com/maps/d/u/0/viewer?mid=1IHv09IkD39miMGFIUc8m1f7GwyMj5wf8&hl=en&ll=23.71200216769783%2C120.8205351366812&z=7" target="_blank")
+                        i.fas.fa-map
+                .custom-google-map.rwd-undermd
+                    iframe(src="https://www.google.com/maps/d/u/0/embed?mid=1IHv09IkD39miMGFIUc8m1f7GwyMj5wf8&z=7&hl=en" ).w-100
+            
+        section#link
+            .title
+                h2 WANT TO KNOW LATEST OFFERS?
+                p CLICK BUTTON TO GET INFORMATION AND FREE PASS!
+                a.button(href="join-us.html")
+                    button(type="button").btn.btn-outline-light JOIN WORKERS' TODAY
+
         footer
             .site-map
                 .row
