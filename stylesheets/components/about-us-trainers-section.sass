@@ -2,3 +2,75 @@ section#header
     +section-header
     .img
         background-position: top center
+section#trainers
+    padding-top: 80px
+    .container
+        .section_intro
+            margin-bottom: 40px
+            +section_intro
+        .row
+            .col-lg-6
+                margin-bottom: 20px
+            .intro-img
+                img
+                    width: 100%
+            .intro-text
+                h3
+                    margin-bottom: 20px
+                    font-size: 30px
+                    font-weight: bold
+                    +md
+                        font-size: 25px
+                p
+                    line-height: 1.5
+                    color: $color_grey
+                    +sm
+                        font-size: 17px
+        .wrap
+            margin-top: 70px
+            h4
+                font-size: 30px
+                font-weight: bold
+                text-align: center
+                
+                +md
+                    font-size: 25px
+            #trainer-service
+                margin-top: 20px
+                .col-lg-4.col-md-6
+                    &:hover
+                        background-color: $color_orange
+                        transition-duration: 0.4s
+                        .icon
+                            i
+                                color: $color_black
+                                transition-duration: 0.4s
+                        .description
+                            h4,p
+                                color: $color_white
+                                transition-duration: 0.4s
+                    .icon
+                        text-align: center
+                        i
+                            font-size: 100px     
+                            color: $color_orange      
+                    .description
+                        padding: 0px 20px 20px 
+                        text-align: center
+                        h4
+                            margin-bottom: 10px
+                            font-size: 30px
+                            font-weight: bold
+                            +md
+                                font-size: 25px
+                            +sm
+                                font-size: 18px
+                        p
+                            color: $color_grey
+                            line-height: 1.5
+                            +sm
+                                font-size: 17px
+    +carousel            
+section#link
+    +section-link
+    

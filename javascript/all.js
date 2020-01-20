@@ -37,7 +37,7 @@ $(document).ready(function(){
   });
 
   //owlCarousel
-  $('.owl-carousel').owlCarousel({
+  $('#gallery').owlCarousel({
     loop: true,
     items: 1,
     nav: true,
@@ -47,6 +47,8 @@ $(document).ready(function(){
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
   });
+
+  
  
 
   // menu_mobile 
@@ -168,6 +170,7 @@ $(document).ready(function(){
     $('#verify-email').hide().animate({left:'101%'});
     $('#link-up').show();
   });
+
 
   
 
