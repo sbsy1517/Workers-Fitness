@@ -83,6 +83,35 @@ html,body
             padding: 5px
             font-size: 18px
 
+@mixin section_news_intro
+    h4
+        font-size: 35px
+        text-align: left
+        color: $color_black
+        +sm
+            h4
+                font-size: 30px
+    // h2.rwd-oversm
+    //     display: block           
+    //     +sm
+    //         display: none
+    // h2.rwd-undersm
+    //     display: none
+    //     +sm
+    //         display: block
+    .line
+        width: 35px
+        height: 4px
+        margin: 20px 0px
+        background-color: $color_orange
+        +sm
+            margin: 10px 0px
+    p
+        text-align: left
+        color: $color_black
+        font-size: 18px
+
+
 
 // about us/news/join us mixin section#header
 @mixin section-header
