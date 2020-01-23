@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        title WORKERS' FITNESS | OUR CLASS MAKES YOU FIT AND IT'S WORTHY
+        title WORKERS' FITNESS SHOP | Bodybuilding Supplements & Sports Nutrition
         meta(charset='UTF-8')
         meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
         meta(http-equiv="X-UA-Compatible" content="IE=Edge")
@@ -40,95 +40,86 @@ html(lang="en")
     body    
         
         nav.myNavbar.navbar-top.d-flex.w-100.position-fixed.justify-content-between.align-items-center
-            a.logo(href="index.html") Workers'
+            a.logo(href="#") Workers' Shop
             .menu.rwd-overlg
-                a.menu_list(href="index.html").d-inline-flex Home
-                .dropdown.menu_list About Us
+                a.menu_list(href="index.html").d-inline-flex Gym
+                .dropdown.menu_list Account
                     .dropdown-content
-                        a(href="about-us-story.html") Story
-                        a(href="about-us-classes.html") Classes
-                        a(href="about-us-locations.html") Locations
-                        a(href="about-us-trainers.html") Trainers
-                a.menu_list(href="news.html") News
-                a.menu_list(href="shop.html").actived Shop
-                .dropdown.menu_list Membership
-                    .dropdown-content
-                        a(href='membership-login.html') Login
-                        a(href='membership-signup.html') Sign Up
-                a.menu_list(href="join-us.html") Join Us
+                        a(href='#') Login
+                        a(href='#') Sign Up
+                .dropdown.menu_list 
+                    i.fas.fa-shopping-basket
+                    span.ml-2 Cart
+                    .dropdown-content.cart
+                        p There are currently no items in your cart.
             .menu-hamburger.rwd-underlg
                 .fas.fa-bars.hamburger
             .menu_mobile
                 .wrap.w-100
-                    a(href="index.html").menu_list#option Home
-                    hr
-                    a.menu_list(data-toggle="collapse" href="#about_us" role="button" aria-expanded="false" aria-controls="about_us")#about_us_title About Us
-                    .collapse#about_us 
-                        a.collapse_items(href="about-us-story.html") Story
-                        a.collapse_items(href="about-us-classes.html") Classes
-                        a.collapse_items(href="about-us-locations.html") Locations
-                        a.collapse_items(href="about-us-trainers.html") Trainers
-                    hr
-                    a.menu_list(href="news.html")#option News
-                    hr
-                    a.menu_list(href="shop.html").actived#option Shop
-                    hr
-                    a.menu_list(data-toggle="collapse" href="#membership" role="button" aria-expanded="false" aria-controls="membership")#membership_title Membership
-                    .collapse#membership
-                        a.collapse_items(href='membership-login.html') Login
-                        a.collapse_items(href='membership-signup.html') Sign Up
-                    hr
-                    a.menu_list#option(href="join-us.html") Join Us
-        
+                    a(href="index.html").menu_list#option Gym
+                    a.menu_list(data-toggle="collapse" href="#account" role="button" aria-expanded="false" aria-controls="account")#account_title Account
+                    .collapse#account
+                        a.collapse_items(href='#') Login
+                        a.collapse_items(href='#') Sign Up
+        section#header
+            a(href="index.html")
+                img.rwd-overlg(src="source/img/shop/shop-header-1.jpg", alt="")
+                img.rwd-overmd(src="source/img/shop/shop-header-2.jpg", alt="")
+                img.rwd-oversm(src="source/img/shop/shop-header-3.jpg", alt="")
+                img.rwd-undersm(src="source/img/shop/shop-header-4.jpg", alt="")
         footer
             .site-map
                 .row
                     .col-lg-5.rwd-underlg
-                        .form-group
-                            form(action="" novalidate).needs-validation
-                                h4
-                                    label(for="subscribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
-                                .group
-                                    i.far.fa-envelope.d-flex.align-items-center.align-self-center
-                                    input#subscribe(type="email" placeholder=" Enter Your Email to Get News" required).form-control
-                                    .invalid-feedback Please enter a valid email 😭
-                                    button(type="submit").btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
-                                        i.fas.fa-arrow-right
+                        .help_information
+                            h4 HELP & INFORMATION
+                            ul
+                                li
+                                    a(href="#") CUSTOMER SERVICES
+                                li
+                                    a(href="#") CONTACT US
+                                li 
+                                    a(href="#") HELP CENTRE
+                                li
+                                    a(href="#") RETURNS POLICY
+                                li
+                                    a(href="#") DELIVERY INFORMATION
+                                li
+                                    a(href="#") INTERNATIONAL DELIVERY
                         hr
                     .col-lg-7
                         .row.footer_content
                             .footer_list.col-4
-                                h4 ABOUT US
+                                h4 PRODUCTS
                                 ul
                                     li 
-                                        a(href="about-us-story.html") STORY
+                                        a(href="#") NUTRITION
                                     li
-                                        a(href="about-us-classes.html") CLASSES
+                                        a(href="#") CLOTHING  
                                     li
-                                        a(href="about-us-locations.html") LOCATIONS
+                                        a(href="#") ACCESSORIES
                                     li
-                                        a(href="about-us-trainers.html") TRAINERS
+                                        a(href="#") DIETARY NEEDS
                             .footer_list.col-4
-                                h4 MEMBERSHIP
+                                h4 ACCOUNT
                                 ul
                                     li
-                                        a(href="membership-login.html") LOGIN
+                                        a(href="#") LOGIN
                                     li
-                                        a(href="membership-signup.html") SIGN UP
-                                    li
-                                        a(href="join-us.html") JOIN US
+                                        a(href="#") SIGN UP
                                     
                             .footer_list.col-4
                                 h4 MORE
                                 ul
                                     li
-                                        a(href="news.html") NEWS
+                                        a(href="index.html") WORKERS' FITNESS
                                     li
-                                        a(href="shop.html") SHOP
+                                        a(href="#") VOUCHER CODES
                                     li 
                                         a(href="https://apps.apple.com/us/app/activity/id1208224953" target="_blank") IOS APP
                                     li
                                         a(href="https://play.google.com/store/apps" target="_blank") ANDROID APP
+                                      
                             
                             .footer_list.col-4
                                 h4 COMPANY
@@ -140,7 +131,7 @@ html(lang="en")
                                     li 
                                         a(href="#") PRIVACY POLICY
                                     li
-                                        a.text-nowrap(href="#") TERMS & CONDITIONS        
+                                        a.text-nowrap(href="#") TERMS & CONDITIONS              
                             .footer_list_app.col-4
                                 h4 FIND US ON
                                 ul.social.w-100.d-flex.justify-content-between
@@ -152,20 +143,53 @@ html(lang="en")
                                         a(href="https://twitter.com" target="_blank").fab.fa-twitter  
                                     li 
                                         a(href="https://www.youtube.com" target="_blank").fab.fa-youtube
+                            
                     .col-lg-5.rwd-overlg
-                        .form-group
-                            form(action="" novalidate).needs-validation
-                                h4
-                                    label(for="subscribe") GET THE LATEST WORKERS' NEWS, FITNESS TIPS, & EXCLUSIVE OFFERS DELIVERED STRAIGHT TO YOUR INBOX
-                                .group
-                                    i.far.fa-envelope.d-flex.align-items-center.align-self-center
-                                    input#subscribe(type="email" placeholder=" Enter Your Email to Get News" required).form-control
-                                    .invalid-feedback Please enter a valid email 😭
-                                    button(type="submit").btn.btn-outline-dark.d-flex.align-items-center.justify-content-center
-                                        i.fas.fa-arrow-right
+                        .help_information
+                            h4 HELP & INFORMATION
+                            ul
+                                li
+                                    a(href="#") CUSTOMER SERVICES
+                                li
+                                    a(href="#") CONTACT US
+                                li 
+                                    a(href="#") HELP CENTRE
+                                li
+                                    a(href="#") RETURNS POLICY
+                                li
+                                    a(href="#") DELIVERY INFORMATION
+                                li
+                                    a(href="#") INTERNATIONAL DELIVERY
+                        
+                        .pay-with.rwd-overxl.mb-3
+                            h5 PAY SECURELY WITH
+                            .logo.mt-3
+                                img(src="source/img/shop/payment-logo/visa.png", alt="").mr-4
+                                img(src="source/img/shop/payment-logo/visa-electron.png", alt="").mr-4
+                                img(src="source/img/shop/payment-logo/mastercard.png", alt="").mr-4
+                                img(src="source/img/shop/payment-logo/maestro.png", alt="").mr-4
+                                img(src="source/img/shop/payment-logo/american-express.png", alt="")
+                            .logo.mt-2
+                                img(src="source/img/shop/payment-logo/apple-pay.png", alt="").mr-4
+                                img(src="source/img/shop/payment-logo/google-pay.png", alt="").mr-4
+                                img(src="source/img/shop/payment-logo/line-pay.png", alt="",style="width: 90px").mr-4
+                                img(src="source/img/shop/payment-logo/paypal.png", alt="" ,style="width: 90px")
+                    
+            .pay-with.rwd-underxl
+                h5.mb-3 PAY SECURELY WITH
+                .logo.d-flex.align-items-center.justify-content-start.flex-wrap
+                    img(src="source/img/shop/payment-logo/visa.png", alt="")
+                    img(src="source/img/shop/payment-logo/visa-electron.png", alt="")
+                    img(src="source/img/shop/payment-logo/mastercard.png", alt="")
+                    img(src="source/img/shop/payment-logo/maestro.png", alt="")
+                    img(src="source/img/shop/payment-logo/american-express.png", alt="")
+                    img(src="source/img/shop/payment-logo/apple-pay.png", alt="")
+                    img(src="source/img/shop/payment-logo/google-pay.png", alt="")
+                    img#big(src="source/img/shop/payment-logo/line-pay.png", alt="")
+                    img#big(src="source/img/shop/payment-logo/paypal.png", alt="" )
             .copyright
                 .container.text-center
-                    p Copyright © 2020 Workers' Fitness Studio.  This website is only the project for learning Bootstrap4. Website design and build by h.chiu.
+                    p Copyright © 2020 Workers' Fitness Shop.  This website is only the project for learning Bootstrap4. Website design and build by h.chiu.
 
 
         script(src="javascript/jquery.min.js")
